@@ -17,7 +17,10 @@ $ ls
 $ ls
 .exercice/  .img/   texte.txt
 
+~ C://Users/Documents
 $ cp texte.txt  test.txt
+
+~ C://Users/Documents
 $ ls
 .exercice/  .img/   texte.txt   test.txt
 ```
