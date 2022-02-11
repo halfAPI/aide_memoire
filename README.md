@@ -2,7 +2,7 @@
 
 Aide mémoire pour les commandes utilisées dans la formation BeCode-Développeur web
 
-P/S : N'hésitez pas à compléter le fichier &#x1F609; 
+P/S : N'hésitez pas à compléter les fichiers &#x1F609; 
 
 <hr>
 
