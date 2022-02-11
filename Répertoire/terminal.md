@@ -4,6 +4,13 @@
 
 Voici une liste non exhaustive des commandes que l'on utilise dans un terminal ou dans git bash. 
 
+- `exit` : cette commande permet de fermer le terminal
+
+- `--help` : permet d'obtenir de l'aide sur une commande. Par exemple, l'aide de la commande `ls`:
+```
+$ ls --help
+```
+
 - `ls`: permet de lister tout les fichiers présents dans un dossier. Par exemple, voir le contenu du dossier documents :
 ```
 ~ C://Users/Documents
@@ -35,29 +42,50 @@ users/documents/exercice/exercice.txt
 - `cd` : permet de se déplacer d'un dossier à l'autre. A noter que la commande `cd ..` permet de revenir d'un pas en arrière
 ```
 ~ 
-C://Users/Documents
-$ ls
-.exercice/  .img/
+$ cd users
+
+~ C://users
+$ cd documents
+
+~ C://users/documents
+$ cd ..
+
+~ C://users
 ```
 
 - `cat` : la commande cat permet d'afficher le contenu d'un fichier
 ```
 ~
-C://Users/Documents
-$ ls
-.exercice/  .img/
+$ cat README.md
+Voici l'exemple de l'utilisation de la comande
 ```
 
 - `touch` : cette commande permet de créer un nouveau fichier dans un dossier
 ```
-C://Users/Documents
+~ C://Users/Documents
 $ ls
 .exercice/  .img/
+
+~ C://Users/Documents
+$ touch fichier.ppt
+
+~ C://Users/Documents
+$ ls
+.exercice/   .img/   fichier.ppt
 ```
 
 - `mkdir`(**make directory**) : permet la création d'un nouveau dossier
 ```
+~ C://Users/Documents
+$ ls
+.exercice/   .img/
 
+~ C://Users/Documents
+$ mkdir newDossier
+
+~ C://Users/Documents
+$ ls
+.exercice/   .img/   .newDossier/
 ```
 
 - `mv` : permet le déplacement d'un fichier ou d'un dossier
@@ -67,10 +95,16 @@ $ mv ~/Downloads/MyFile.txt ~/Documents/Work/MyFile.txt
 
 - `rm`: permet la suppression de fichier. **ATTENTION**, la commande `rm -rf` supprime **TOUT** les fichiers présents dans le dossier dans lequel on se trouve. La commande ne demande pas de confirmation, à utiliser avec précaution. 
 ```
-~
-C://Users/Documents
+~ C://Users/Documents
 $ ls
-.exercice/  .img/
+.exercice   .img/   .newDossier/
+
+~ C://Users/Documents
+$ rm newDossier
+
+~ C://Users/Documents
+$ ls 
+.exercice/   .img/
 ```
 
 - `rmdir`: permet la suppression de dossiers.
