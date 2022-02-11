@@ -32,7 +32,7 @@ $ pwd
 users/documents/exercice/exercice.txt
 ```
 
-- `cd`
+- `cd` : permet de se déplacer d'un dossier à l'autre. A noter que la commande `cd ..` permet de revenir d'un pas en arrière
 ```
 ~ 
 C://Users/Documents
@@ -40,7 +40,7 @@ $ ls
 .exercice/  .img/
 ```
 
-- `cat`
+- `cat` : la commande cat permet d'afficher le contenu d'un fichier
 ```
 ~
 C://Users/Documents
@@ -48,14 +48,24 @@ $ ls
 .exercice/  .img/
 ```
 
-- `touch`
+- `touch` : cette commande permet de créer un nouveau fichier dans un dossier
 ```
 C://Users/Documents
 $ ls
 .exercice/  .img/
 ```
 
-- `mkdir`
+- `mkdir`(**make directory**) : permet la création d'un nouveau dossier
+```
+
+```
+
+- `mv` : permet le déplacement d'un fichier ou d'un dossier
+```
+$ mv ~/Downloads/MyFile.txt ~/Documents/Work/MyFile.txt
+```
+
+- `rm`: permet la suppression de fichier. **ATTENTION**, la commande `rm -rf` supprime **TOUT** les fichiers présents dans le dossier dans lequel on se trouve. La commande ne demande pas de confirmation, à utiliser avec précaution. 
 ```
 ~
 C://Users/Documents
@@ -63,54 +73,19 @@ $ ls
 .exercice/  .img/
 ```
 
-- `mv`
-```
-~
-C://Users/Documents
-$ ls
-.exercice/  .img/
-```
+- `rmdir`: permet la suppression de dossiers.
 
-- `rm`
-```
-~
-C://Users/Documents
-$ ls
-.exercice/  .img/
-```
 
-- `rmdir`
-```
-~
-C://Users/Documents
-$ ls
-.exercice/  .img/
-```
+- `chmod`: commande permettant de configurer l'accès aux fichiers et aux dossiers
 
-- `chmod`
-```
-~
-C://Users/Documents
-$ ls
-.exercice/  .img/
-```
 
-- `chown`
-```
-C://Users/Documents
-$ ls
-.exercice/  .img/
-```
+- `chown`: permet de changer le propriétaire d'un fichier ou dossier
 
-- `chgrp`
-```
-~
-C://Users/Documents
-$ ls
-.exercice/  .img/
-```
 
-- `sudo`
+- `chgrp` : permet de change le groupe d'utilisateur d'un fichier ou d'un document
+
+
+- `sudo` : **COMMANDE LINUX**, elle permet de donner des droits à un autre utilisateur
 
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
