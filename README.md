@@ -2,7 +2,6 @@
 
 Aide mémoire pour les commandes utilisées dans la formation BeCode-Développeur web
 
-P/S : N'hésitez pas à compléter les fichiers si besoin &#x1F609; 
 
 <hr>
 
@@ -15,3 +14,7 @@ P/S : N'hésitez pas à compléter les fichiers si besoin &#x1F609;
 * [HTML](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/git.md)
 
 * [CSS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/css.md)
+
+* [SASS]
+
+* [JavaScript]
