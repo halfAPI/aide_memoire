@@ -17,4 +17,4 @@ Aide mémoire pour les commandes utilisées dans la formation BeCode-Développeu
 
 * [SASS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sass.md)
 
-* [JavaScript](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/javascript.md)
+* [L'algorithmie](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/algorithmie.md)
