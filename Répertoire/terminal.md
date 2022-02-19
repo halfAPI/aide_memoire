@@ -1,5 +1,7 @@
 # Les commandes utilisées dans un terminal (*pour Windows*)
 
+Une cheatsheet sur le terminale est disponible [ICI](https://github.com/CalcagnoLoic/aide_memoire/blob/main/Fichiers%20utiles/cmd.pdf)
+
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
 
 Voici une liste non exhaustive des commandes que l'on utilise dans un terminal ou dans git bash. 
@@ -121,5 +123,6 @@ $ ls
 
 - `sudo` : **COMMANDE LINUX**, elle permet de donner des droits à un autre utilisateur
 
+Une cheatsheet sur le terminale est disponible [ICI](https://github.com/CalcagnoLoic/aide_memoire/blob/main/Fichiers%20utiles/cmd.pdf)
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
