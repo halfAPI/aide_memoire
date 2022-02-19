@@ -158,6 +158,124 @@ Une cheatsheet interactive sur le CSS se trouve [ICI](https://htmlcheatsheet.com
 
 - `caption-side` : position du titre du tableau
 
+## Les sélecteurs CSS 
+
+- `.class` : sélectionne les éléments ayant une classe .class
+
+- `.class1.class2` : sélectionne tous les éléments comprenant à la fois .class1 et .class2
+
+- `.class1 .class2` : sélectionne tout les éléments .class2 qui sont des descendants de .class1
+
+- `#exemple` : sélectionne les éléments ayant un ID correspondant à exemple
+
+- `*` : sélectionne tout les éléments 
+
+- `p` : sélectionne les éléments p
+
+- `p.intro` : sélectionne tout les éléments p ayant une classe intro 
+
+- `div, p` : sélectionne tout les éléments div et p
+
+- `div p` : sélectionne tout les éléments p à l'intérieur des éléments div
+
+- `div > p` : sélectionne les éléments p où le parent est un élément div
+
+- `div + p` : sélectionne le premier élément p qui est placé immédiatement après l'élément div
+
+- `p ~ ul` : sélectionne tout les éléments ul qui sont précédé par un élément p
+
+- `[target]` : sélectionne tout les éléments ayant l'attribut target
+
+- `[target=_blank]` : sélectionne tout les éléments ayant `_blank` comme valeur d'attribut pour target
+
+- `[title~=flower]` : sélectionne tout les éléments avec un titre comprenant le mot flower
+
+- `[lang|=en]` : sélectionne tout les éléments ayant un attribut lang dont la valeur est égal à 'en' ou commence par 'en'
+
+- `a[href^="https"]` : sélectionne tout les éléments a qui ont un attribut href dont la valeur commence par https
+
+- `a[href$="https"]`: sélectionne tout les éléments a qui ont un attribut href dont la valeur fini par .pdf
+
+- `a[href*="w3schools"]` : : sélectionne tout les éléments a qui ont un attribut href dont la valeur contient par w3schools
+
+- `a:active` : sélection les liens actifs
+
+- `p::after` : insert quelque chose après le contenu de chaque p
+
+- `p::before` : insert quelque chose avant le contenu de chaque p
+
+- `input:checked` : sélectionne chaque élément input coché
+
+- `input:defaut` : sélectionne chaque élément input par défaut
+
+- `input:disabled` : sélectionne chaque élément input désactivé
+
+- `p:empty` : sélectionne tout les éléments p qui n'ont pas d'enfants
+
+- `input:enabled` : sélectionne chaque élément input activé
+
+- `p:first-child` : sélectionne tout les éléments p qui sont les premiers enfants des parents
+
+- `p::first-letter` : sélectionne la première lettre de chaque élément p
+
+- `p::first-line` : sélectionne la première ligne de chaque élément p
+
+- `p:first-of-type` = sélectionne chaque éléments p qui sont les premiers éléments p des parents
+
+- `input=focus` : sélectionne les éléments input qui ont un focus
+
+- `:fullscreen` : sélectionne les éléments qui sont en mode fullscreen
+
+- `a:hover` : sélectionne les liens en survol de souris
+
+- `input:in-range` : sélectionne les éléments avec une valeur comprise dans une gamme spécifiée
+
+- `input:indeterminate` : sélectionne les éléments input qui ont un état indéterminé
+
+- `p:lang(it)` : sélectionne chaque éléments p avec un attribut lang égal à 'it'
+
+- `p:last-child` : sélectionne chaque éléments p qui est le dernier enfant des parents 
+
+- `p:last-of-type`:sélectionne chaque éléments p qui sont les derniers éléments p des parents 
+
+- `a:link` : sélection tout les liens non visités
+
+- `::marker` : sélection les marqueurs des listes d'items 
+
+- `:not(p)` : sélectionne chaque éléments qui ne sont pas p
+
+- `p:nth-child(2)` : sélectionne chaque éléments p qui sont le second enfant du parent
+
+- `p:nth-last-of-type(2)` : sélectionne chaque éléments p qui sont les seconds éléments p des parents, en comptant depuis le dernier enfant 
+
+- `p:nth-of-type(2)` : sélectionne chaque éléments p qui sont les seconds éléments p des parents 
+
+- `p:only-of-type` : sélectionne chaque éléments p qui sont les seuls éléments p des parents
+
+- `p:only-child` : sélectionne chaque éléments p qui sont les seuls enfants des parents 
+
+- `input:optional` : sélectionne les éléments input qui n'ont pas d'attribut requis
+
+- `input:out-of-range` : sélectionne les éléments input qui ont une valeur à l'extérieur d'une plage spécifiée
+
+- `input::placeholder` : sélectionne les éléments inputs avec un attribut `placeholder` spécifié
+
+- `input:read-only` : sélectionne les éléments input qui ont un attribut `read-only` spécifié
+
+- `input:read-write` : sélectionne les éléments input qui n'ont pas un attribut `read-only` spécifié
+
+- `input:required` : sélection les éléments input ayant l'attribut requis spécifié
+
+- `:root` : sélectionne l'élément racine du document
+
+- `::selection` : sélectionne la portion d'un élément qui est sélection par un utilisateur
+
+- `#new:target` : sélection l'élément #news qui est actuellement actif
+
+- `input:valid` : selection tout les éléments input avec une valeur valide
+
+- `a:visited` : sélectionne tout les liens visitables
+
 ## L'utilisation des flexbox
 
 ![](https://sharkcoder.com/files/article/flex1.png)
