@@ -1,4 +1,4 @@
-# Le responvise web
+# Le responsive web
 
 L'idée du responsive est que la page web s'adapte en fonction de la taille de l'écran. 
 
