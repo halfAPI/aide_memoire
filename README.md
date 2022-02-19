@@ -13,7 +13,7 @@ Aide mémoire pour les commandes utilisées dans la formation BeCode-Développeu
 
 * [HTML](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/html.md)
 
-* [CSS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/css.md)
+* [CSS + les propriétés pour la flexbox et grid](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/css.md)
 
 * [Responsive](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/responsive.md)
 
