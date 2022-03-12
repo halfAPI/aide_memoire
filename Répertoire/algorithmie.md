@@ -1,4 +1,4 @@
-# Les concepts de l'algorithmie 
+# Les concepts de l'algorithmie et Javascript
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
 
@@ -71,6 +71,15 @@ if ((size >= 150) || (weight >= 45)) {
 } else {
   console.log("You probably are a child");
 }
+```
+
+L'opérateur `?` permet de remplacer l'écriture d'une boucle if :
+
+```
+let size = 185;
+let weight = 80;
+
+(size >= 150) || (weight >= 45) ? console.log("You probably are an adult") : console.log("You probably are a child");
 ```
 
 ### La boucle if .. else if .. else
@@ -188,5 +197,386 @@ for (let i = 0; i < 10; i++) {
 console.log(text);
 // expected output: "012456789"
 ```
+
+# Les arrays
+
+Il s'agit de structure assez simple en programmation consistant au stockage d'éléments dans un ordre précis.
+
+## Déclaration 
+
+On peut déclarer un array vide ou un array avec des éléments définis à l'intérieur. Ces éléments peuvent être des nombres, des booléens, des chaines de caractères, etc...
+
+```
+let arrVide = [];
+
+let arrNombre = [1,2,3];
+
+let arrString = ["pomme", "arbre", "abeille"];
+```
+
+## Accès à un élément de l'array
+
+On peut accéder à un élément d'un array grâce à sa position que l'on nomme index. **ATTENTION**, la première position dans un array est la position 0 et non 1.
+
+```
+let array = ["pomme", "cerise", "abricot"];
+console.log(array[1]); //cerise
+```
+
+On peut également modifier un array en accédent à l'index d'un élément. 
+
+```
+let array = [1,2,3];
+array[0] = 24;
+
+console.log(array); // [24,2,3]
+```
+
+## Obtenir la longueur d'un array
+
+La méthode `.length` permet d'indiquer la taille d'un array :
+
+```
+let arr = ["pomme", "cerise", "ananas"];
+console.log(arr.lenght); //3
+```
+
+## Modification d'un array
+
+Diverses méthodes existent pour modifier un array : 
+
+- `push()` : ajoute un élément à la fin de l'array
+
+- `pop()` : supprime un élément à la fin de l'array
+
+- `shift()` : supprime un élément au début de l'array
+
+- `unshift()` : ajoute un élément au début de l'array
+
+```
+let arr = ["pomme", "cerise", "ananas"];
+
+arr.push("kiwi"); // ["pomme", "cerise", "ananas", "kiwi"]
+
+arr.pop(); //["pomme", "cerise"]
+
+arr.shift() ; //["cerise", "ananas"]
+
+arr.unshift("abricot"); ["abricot", "pomme", "cerise", "ananas"]
+```
+
+## Itération d'un array
+
+Lorsque l'on veut itérer sur un array, on peut utiliser une boucle ``for`` : 
+
+```
+let arr = [1,2,3,4];
+
+for (let i = 0, i < arr.length, i++) {
+  arr[i] = arr[i]*3
+}
+
+console.log(arr) ; //[3,6,9,12]
+```
+
+Une autre façon d'écrire cette boucle est d'utiliser une boucle ``for..of`` :
+
+```
+let arr = [1,2,3,4];
+
+for (let element of arr) {
+  element*3
+}
+
+console.log(arr); //[3,6,9,12]
+```
+
+Une méthode existe également afin d'itérer sur un array, il s'agit de la méthode `.map`: 
+
+```
+let arr = [1,2,3,4];
+
+let arr1 = arr.map(x => x*3);
+
+console.log(arr1); //[3,6,9,12]
+```
+
+# Les fonctions
+
+Les fonctions sont des pièces de code réutilisable (un peu comme les mixins en SASS). L'intérêt des fonctions est multiple : 
+
+- Les fonctions permettent de réutiliser plusieurs fois le même code.
+
+- Les fonctions permettent de diminuer le risque d'erreur lorsque l'on recopier plusieurs fois les mêmes instructions. 
+
+- Il est conseillé d'utiliser une fonction lorsque l'on répète au moins 2 fois la même instruction.
+
+## Ecriture d'une fonction 
+
+L'écriture de base d'une fonction fait appel à 3 éléments : 
+
+```
+function nomDeLaFonction(argument(s)) {
+  //bloc d'instruction
+}
+```
+
+Prenons l'exemple d'un calcul d'une somme qui doit être réalisé plusieurs fois dans un script. On peut faire une fonction ainsi, il n'y aura qu'à appeler la fonction au moment d'effectuer la somme :
+
+```
+function somme(a, b) {
+  return a + b;
+}
+
+somme(3,4); // 7
+```
+
+## Les fonctions fléchées 
+
+Les fonctions fléchées sont une autre forme de syntaxe d'écriture de fonctions :
+
+```
+nomDeLaFonction = (argument(s)) => {
+  //bloc d'instruction
+}
+```
+
+Si on reprend notre fonction somme, la nouvelle syntaxe devient: 
+
+```
+somme = (a, b) => {
+  return a + b;
+}
+```
+
+## La récursivité 
+
+Le principe de la récursivité dans la programmation est le fait d'appeler la fonction elle-même dans l'instruction
+
+```
+function count(i) {
+  if (i <= 100) {
+    count(i + 1)
+    console.log(i);
+  }
+}
+```
+
+## L'aide des fonctions
+
+Lorsque l'on utilise des fonctions dans un script, il faut le nom de la fonction soit assez parlant pour aider un autre dev à comprendre le code. On peut également ajouter de la JSdoc permettant de faire de la documentation de fonction. 
+
+Si on reprend notre fonction somme : 
+
+```
+/*
+* @function somme()
+* Fonction permettant de faire la somme entre deux valeurs numériques
+*
+* @param {number} a  - un nombre
+* @param {number} b  - un nombre
+* @returns {number} - la somme des deux nombres
+*
+* @example somme(2,1) // return 3
+*/
+
+function somme(a, b) {
+  return a + b;
+}
+```
+
+# Les objets 
+
+Les objets sont des structures de programmation assez simple comme les arrays. Dans le cas des objets, l'accès ne se fait pas via les index mais via un système de clé:valeur. 
+
+```
+let objet = {
+  prenom : "Loïc",
+  nom : "Calcagno",
+  age : 29
+}
+```
+
+Si je veux accéder à un élément de l'objet, il suffit d'appeler la clé pour avoir accès à la valeur. Si je veux voir l'âge, je fais : 
+
+```
+console.log(objet.age)
+```
+
+On peut même imaginer combiner les objets et les arrays pour avoir accès à des structures plus complexes. 
+
+```
+let presentation = {
+  prenom : "Loïc",
+  nom : "Calcagno",
+  age : 29, 
+  skills : [
+    {
+      skillname : "HTML",
+      level : "advanced"
+    } , 
+    {
+      skillname : "Javascript",
+      level : "basic"
+    }
+  ],
+  "address" : {
+    localite : "La Hestre", 
+    codePostal : 7170
+  }
+}
+```
+
+# Les classes 
+
+Les classes sont des outils en programmation qui sont plus compliquées que le reste. On utilise d'ailleurs ces classes dans la POO (*P*rogrammation *O*rienté *O*bjet).
+
+Une classe est composée d'un constructeur, de méthodes, de méthodes getter et setter. 
+
+Notons également qu'un héritage peut avoir lieu entre différentes classes.
+
+## Les constructeurs 
+
+Un constructeur est la fonctionne qui sera appelée lorsque l'objet est créé. 
+
+```
+class Presentation {
+  constructor(prenom, nom) {
+    this.prenom = prenom;
+    this.nom = nom
+  }
+}
+```
+
+Lors de la création d'un objet à partir d'une classe, on appelle l'objet créé une *instance*. Ce procédé de création à partir d'une classe se nomme l'*instanciation*. 
+
+```
+let x = new Presentation("Loïc", "Calcagno");
+```
+
+X est l'instance de la classe Presentation possédant 2 arguments -prénom et nom- définit par le constructeur de la classe.
+
+## Les méthodes et `this`
+
+Une classe possède diverses méthodes. Il s'agit juste d'une fonction mais dans un contexte de classe. Les méthodes sont donc des fonctions qui exécute un bloc d'instruction.
+
+Le mot-clé `this` est d'ailleurs une méthode qui permet d'accéder à l'objet en question.
+
+```
+class Presentation {
+  constructor(prenom, nom) {
+    this.prenom = prenom,
+    this.nom = nom
+  }
+  salutation(other) {
+    console.log("Hey, je m'appelle" + this.prenom + " et je te souhaite la bienvenue sur ce " + other);
+  }
+}
+
+let x = new Presentation("Loïc", "Calcagno").salutation("dépôt GitHub");
+
+console.log(x);
+// "Hey, je m'appelle Loïc et je te souhaite la bienvenue sur ce dépôt GitHub"
+```
+
+## Setter et getter 
+
+La syntaxe de la méthode get permet de lier une propriété d'un objet à une fonction qui sera appelée lorsque l'on accédera à la propriété. 
+
+Tout ça pour dire, que grâce à la méthode get, j'appelle un élément via la propriété sans le modifier. 
+
+```
+class Presentation {
+  constructor(prenon) {
+    this.prenom = prenom;
+  }
+  get afficherPrenom() {
+    return thisPrenom
+  }
+}
+
+let x = new Presentation("Loïc"); //J'instancie x 
+
+console.log(x.afficherPrenom) //"Loïc"
+```
+
+La syntaxe de la méthode set permet de lier une propriété d'un objet à une fonction qui sera appelée à chaque tentative de modification de cette propriété. 
+
+Tout ça pour dire, que je peux venir modifier une propriété de ma classe via une valeur que j'attribue à ma méthode set. 
+
+```
+class Presentation {
+  constructor(prenon) {
+    this.prenom = prenom;
+  }
+  set changerPrenom (val) {
+    this.prenom = val
+  }
+}
+
+let x = new Presentation("Loïc"); //J'instancie x 
+x.changerPrenom = "Nathan"; //Je change la valeur de l'élément présent dans l'instance via la méthode set
+
+console.log(x) // "Nathan"
+```
+
+## Les accesseurs 
+
+L'opérateur `.` permet d'accéder à n'importe quel attribut d'un objet. 
+
+Une classe permet de faire un *faux attribut* permettant de déclencher une fonction.
+
+```
+class Presentation {
+  constructor(prenom) {
+    this.prenom = prenom;
+  }
+  get changementPrenom() {
+    return this.prenom[0]; //Signifie que je récupère le premier élément d'un array
+  }
+  set changementPrenom(val) {
+    this.prenom[0] = val; //Signifie que je remplace l'élément 0 de l'array par la valeur de la méthode set
+  }
+}
+
+let x = new Presentation(["Loïc", "Wickham"]);
+// J'utilise la méthode get 
+console.log(x.changementPrenom); // Loïc
+
+// J'utilise la méthode set 
+x.changementPrenom = "Marc";
+console.log(x.changementPrenom); // Marc
+```
+
+## L'héritage de classe 
+
+Lorsque l'on utilise des classes, il est possible de réutiliser des méthodes définies dans d'autres classes. C'est ce que l'on appelle l'héritage des classes. 
+
+```
+class Presentation {
+  constructor(prenom) {
+    this.prenom = prenom;
+  }
+  get afficherPrenom(){
+    return this.prenom
+  }
+  set afficherPrenom (val) {
+    this.prenom = val
+  }
+}
+
+class Stage extends Presentation {
+  constructor(nom) {
+    this.nom = nom
+  }
+  salutation() {
+    return super.afficherPrenom + this.nom
+  }
+}
+
+let x = new Presentation("Loïc");
+console.log(x.Stage("Calcagno").salutation());
+// "Loïc Calcagno" 
+``` 
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
