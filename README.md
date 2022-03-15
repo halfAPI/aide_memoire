@@ -28,3 +28,9 @@ Aide mémoire pour les commandes utilisées dans la formation BeCode-Développeu
 * [L'algorithmie](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/algorithmie.md)
 
 * [Javascript](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/js.md)
+
+* [Ajax](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/json_ajax_fetch.md)
+
+* [Canvas](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/canvas.md)
+
+* [Jasmine]
