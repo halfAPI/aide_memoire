@@ -99,12 +99,194 @@ if(x > 1){
 }
 ```
 
-# Les opérateurs logiques, précédence et règle d'associativité des opérateurs
+# Les opérateurs logiques, précédence et règles d'associativité des opérateurs
+
+## Les opérateurs logiques 
+
+Il s'agit d'opérateur qui seront utilisés avec des valeurs booléenne et des conditions. JS supporte 3 types d'opérateurs logiques : ET, OU et NON. 
+
+|  Opérateur  |  Symbole  |  Description |
+|-------------|-----------|--------------|
+|`AND` (ET)   | `&&`      | Renvoie true si toutes les conditions sont égales|
+|`OR` (OU)    | `//`      | Renvoie true si au moins une des conditions soit respectées|
+|`NO` (NON)   | `!`       | Inverse le résultat logique d'une condition|
+
+## Précédence et règles d'associativité des opérateurs
+
+Il existe un ordre de priorité au sein des différents opérateurs, c'est la précédence. 
+
+De plus, les règles d'associativité vont également s'appliquées. L'associativité détermine l'ordre dans lequel des opérateurs de même précédence sont évalués. Et donc l'ordre dans lequel va s'effectuer la lecture des opérateurs. Une associativité par la gauche signifie qu’on va commencer réaliser les opérations en partant de la gauche et vers la droite tandis qu’une associativité par la droite signifie qu’on va commencer par la droite. 
+
+Voici un tableau récapitulant différents opérateurs ainsi que leur précédence (la plus basse = 0 et la plus haute = 10)
+
+| Précédence | Opérateur | Symbole | Associativité |
+|------------|-----------|---------|---------------|
+|0           | Groupement| `(...)` |  /            |
+|1           | Incrémentation| `...++` |  /        |
+|1           | Décrémentation| `...--` |  /        |
+|2           | NON| `!...` |  Droite           |
+|2           | Pré-incrémentation| `++...` |  Droite   |
+|2           | Pré-décrémentation| `--...` |  Droite   |
+|3           | Exponentiel| `...**...` |  Droite       |
+|3           | Multiplication| `...*...` |  Gauche     |
+|3           | Division| `.../...` |  Gauche      |
+|3           | Modulo| `...%...` |  Gauche        |
+|4           | Addition| `...+...` |  Gauche      |
+|4           | Soustraction| `...-...` |  Gauche   |
+|5           | Inférieur strict| `...<...` |  Gauche      |
+|5           | Inférieur ou égal| `...<=...` |  Gauche        |
+|5           | Supérieur strict| `...>...` |  Gauche        |
+|5           | Supérieur ou égal| `...>=...` |  Gauche        |
+|6           | Egalité| `...==...` |  Gauche        |
+|6           | Inégalité| `...!=...` |  Gauche      |
+|6           | Egalité| `...===...` |  Gauche       |
+|6           | Inégalité| `...!==...` |  Gauche     |
+|7           | ET| `&&` |  Gauche            |
+|8           | OU| `//` |  Gauche            |
+|9           | Ternaire| `...?...:...` |  Droite    |
+|10          | Affectation| `... = ...` |  Droite   |
 
 # Utilisation d'opérateur ternaire (`?` et `:`) 
 
+L'opérateur ternaire est un opérateur de comparaison correspondant à une autre facçon d'écrire des conditions. 
+
+La syntaxe est très condensée et permet d'écrire l'instruction en une seule ligne et donc accélérer la vitesse d'exécution du code. 
+
+Cet opérateur est mal aimé car la syntaxe est un peu compliqué de prime abord mais si le code est correctement indenté et commenté, il n'y a aucun soucis dans l'utilisation de cet opérateur. 
+
+```
+x >=10 ? 'x est supérieur à 10' : 'x est strictement inférieur à 10";
+```
+
 # L'instruction `switch`
 
-# Les boucles `while`, `do ... while`, `for` et `for ... in`
+Cette instruction permet d'exécuter un code en fonction de la valeur d'une variable. On peut générer autant de "cas" que l'on souhaite. Cette instruction est une alternative à l'utilisation du `if...else`.
+
+Cependant, ces deux types d’instructions ne sont pas strictement équivalentes puisque dans un `switch` chaque cas va être lié à une valeur précise. En effet, l’instruction `switch` ne supporte pas l’utilisation des opérateurs de supériorité ou d’infériorité. 
+
+```
+let x = 15;
+
+switch(x){
+    case 2:
+        document.getElementById('p1').innerHTML = 'x stocke la valeur 2';
+        break;
+    case 5:
+        document.getElementById('p1').innerHTML = 'x stocke la valeur 5';
+        break;
+    case 10:
+        document.getElementById('p1').innerHTML = 'x stocke la valeur 10';
+        break;
+    case 15:
+        document.getElementById('p1').innerHTML = 'x stocke la valeur 15';
+        break;
+    case 20:
+        document.getElementById('p1').innerHTML = 'x stocke la valeur 20';
+        break;
+    default:
+        document.getElementById('p1').innerHTML =
+        'x ne stocke ni 2, ni 5, ni 10, ni 15 ni 20';
+}
+```
+
+# Les boucles 
+
+En programmation, une boucle permet d'exécuter plusieurs fois un bloc de code, c'est-à-dire exécuter un code "en boucle". 
+
+Il existe différentes boucles : 
+
+- La boucle `while` (*tant que*)
+
+- La boucle `do...while` (*faire...tant que*)
+
+- La boucle `for` (*pour*)
+
+- La boucle `for...in` (*pour...dans*)
+
+- La boucle `for...of` (*pour...parmi*)
+
+- La boucle `for await...of` (*pour -en attente-...parmi*)
+
+Dans ce genre de boucle, il faut faire comprendre que l'on veut ajouter une valeur. Il s'agit d'incrémenter ou décrémenter (enlever une valeur).
+
+|  Exemple  |  Signification  |
+|-----------|-----------------|
+| `++x`     | Pré-incrémentation : incrémente la valeur contenue dans la variable x, puis retourne la valeur incrémentée|
+| `x++`     | Post-incrémentation : retourne la valeur contenue dans x avant incrémentation, puis incrémente la valeur de $x|
+| `--x`     | Pré-décrémentation : décrémente la valeur contenue dans la variable x, puis retourne la valeur décrémentée|
+| `x--`     | Pré-décrémentation : décrémente la valeur contenue dans la variable x, puis retourne la valeur décrémentée|
+
+## La boucle `while`
+
+La boucle `while` va nous permettre de répéter une série d’instructions tant qu’une condition donnée est vraie c’est-à-dire tant que la condition de sortie n’est pas vérifiée.
+
+```
+//On initialise une variable let x
+let x = 0
+
+//Tant que...
+while(x < 10){
+    x++;
+}
+```
+
+## La boucle `do...while`
+
+Lorsqu’on utilise une boucle `do… while`, le code de la boucle va être exécuté avant l’évaluation de la condition de sortie. 
+
+```
+let a = 0;
+
+do{
+    a++;
+}
+while(a < 10);
+```
+
+## La boucle `for`
+
+Une boucle for contient trois « phases » à l’intérieur du couple de parenthèses : une phase d’initialisation, une phase de test (condition de sortie) et une phase d’itération (généralement une incrémentation). Chaque phase est séparée des autres par un point-virgule. 
+
+```
+for(let i = 0; i < 10; i++){
+    return i;
+}
+```
+
+## L'instruction `continue`
+
+Pour sauter une itération de boucle et passer directement à la suivante, on peut utiliser une instruction `continue`. Cette instruction va nous permettre de sauter l’itération actuelle et de passer directement à l’itération suivante.
+
+Cette instruction peut s’avérer très utile pour optimiser les performances d’une boucle et économiser les ressources lorsqu’on utilise une boucle pour rechercher spécifiquement certaines valeurs qui répondent à des critères précis.
+
+```
+for(let i = 0; i < 10; i++){
+    //Si i / 2 possède un reste, alors i est impair
+    if(i % 2 != 0){
+        continue;
+    }
+    document.getElementById('p1').innerHTML +=
+    'i stocke la valeur ' + i + ' lors du passage n°'
+    + (i + 1) + ' dans la boucle<br>';
+}
+```
+
+## L'instruction `break`
+
+On va également pouvoir complètement stopper l’exécution d’une boucle et sortir à un moment donné en utilisant une instruction `break` au sein de la boucle.
+
+Utiliser cette instruction peut à nouveau s’avérer très intéressant pour optimiser les performances de notre script lorsqu’on utilise une boucle pour chercher une valeur en particulier en itérant parmi un grand nombre de valeurs.
+
+```
+for(let i = 0; i < 1000; i++){
+    //On sort de la boucle dès que la valeur de i atteint 13
+    if(i == 13){
+        break;
+    }
+    document.getElementById('p1').innerHTML +=
+    'i stocke la valeur ' + i + ' lors du passage n°'
+    + (i + 1) + ' dans la boucle<br>';
+}
+```
 
 [Retour vers les chapitres JS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/js.md)

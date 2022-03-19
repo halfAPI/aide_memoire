@@ -18,6 +18,8 @@ Voici les différentes informations abordées dans cette section :
 
 # Valeurs primitives et objets prédéfinis 
 
+Il existe 2 catégories de types de données en JS : les valeurs primitives et les objets.
+
 # L'objet global `String` : Propriétés et méthodes
 
 # L'objet global `Number` : Propriétés et méthodes
