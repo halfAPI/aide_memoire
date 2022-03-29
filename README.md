@@ -38,3 +38,11 @@ Aide mémoire pour les commandes utilisées dans la formation BeCode-Développeu
 * [Canvas](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/canvas.md)
 
 * [Jasmine](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/jasmine.md)
+
+* [Les méthodes pour les arrays](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/array_meth.md)
+
+* [Les méthodes pour les string](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/string_meth.md)
+
+* [Les méthodes pour les dates](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/date_meth.md)
+
+* [Les méthodes pour les nombres](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/nombre_meth.md)

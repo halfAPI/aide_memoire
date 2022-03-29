@@ -4,8 +4,6 @@ Ce chapitre concernant Javascript est long et est donc divisé en différentes s
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
 
-Toutes les informations proviennent du cours présent à cette adresse : https://www.pierre-giraud.com/javascript-apprendre-coder-cours/ 
-
 Les différentes sections abordées sont : 
 
 * [Les variables et les types de valeurs Javascript](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/var.md) 
@@ -25,6 +23,8 @@ Les différentes sections abordées sont :
 * [Les expressions régulières en Javascript](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/regex.md) 
 
 * [Notions avancées](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/avancee.md) 
+
+* [Gestion des erreurs](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/errors.md)
 
 * [L'asynchrone en Javascript](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/asynchrone.md) 
 
