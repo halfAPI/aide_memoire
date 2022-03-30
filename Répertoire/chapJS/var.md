@@ -30,7 +30,7 @@ En Javascript, il existe 7 types de variables :
 
 Toutes les valeurs `string` sont déclarées via des apostrophes. **ATTENTION**, un chiffre déclarer avec des apostrophes correspondra à un `string` et non un nombre!
 
-```
+```js
 let prenom = "Je m'appelle Loïc";
 let age = "29";
 ```
@@ -39,7 +39,7 @@ let age = "29";
 
 Contrairement aux autres langages comme R ou Python où il existe différents types en fonction que le nombre soit entier, décimal etc (`integer`, `double` et `float`), en javascript il n'en existe qu'un seul => `number`
 
-```
+```js
 let x = 10;
 let y = -1;
 let z = 3.14;
@@ -114,7 +114,7 @@ Ce sont des opérateurs permettant d'affecter des valeurs à une variable. Il y 
 
 La concaténation correspond au fait de mettre bout à bout des chaines de caractères pour en former une nouvelle : 
 
-```
+```js
 let x = "Le javascript ";
 let y = "c'est trop cool!";
 
@@ -123,7 +123,7 @@ console.log(x + y); //Le javascript c'est trop cool!
 
 ou bien encore : 
 
-```
+```js
 let x = " le javascript ";
 let y = "c'est trop cool!";
 
@@ -138,7 +138,7 @@ Cependant, il existe une troisième manière, le `. La grande différence entre 
 
 On va pouvoir insérer des valeurs en utilisant cette manière. Mais pour cela, il faut utiliser une syntaxe particulière : `$ { }`. 
 
-```
+```js
 let x = 5; 
 let y = 10;
 
@@ -160,7 +160,7 @@ En effet, une fois qu’une valeur est attribuée à une constante, celle-ci est
 
 La déclaration se fait via le mot clé `const` 
 
-```
+```js
 const prenom = "Loïc";
 const age = 29;
 ```

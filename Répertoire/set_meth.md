@@ -8,7 +8,7 @@ Dans cette section, seule les méthodes seront définies. Pour plus d'exemples, 
 
 - `Set.add()` : La méthode add() permet d'ajouter un nouvel élément ayant une valeur donnée à un ensemble Set. Cette valeur sera ajoutée à la fin de l'objet Set.
 
-```
+```js
 monSet.add(valeur);
 
 // exemple :
@@ -27,7 +27,7 @@ for (const item of set1) {
 
 - `Set.clear()` : La méthode clear() permet de retirer tous les éléments d'un ensemble Set.
 
-```
+```js
 monSet.clear();
 
 // exemple :
@@ -46,7 +46,7 @@ console.log(set1.size);
 
 - `Set.delete()` : La méthode delete() permet de retirer un élément donné d'un objet Set.
 
-```
+```js
 monSet.delete(valeur);
 
 // exemple :
@@ -67,7 +67,7 @@ console.log(set1.size);
 
 - `Set.entries()` : La méthode entries() renvoie un nouvel objet Iterator qui contient un tableau composé de [valeur, valeur] pour chaque élément de l'objet Set, dans leur ordre d'insertion. En raison de leur structure, les objets Set n'ont pas de clé (key), à la différence des objets Map. Pour garder une structure et une API sembables à celle d'un objet Map, chaque entrée (entry) aura la même valeur pour la clé (key) et pour la valeur (value), c'est pourquoi un tableau de [valeur, valeur] est renvoyé.
 
-```
+```js
 monSet.entries()
 
 // exemple :
@@ -86,7 +86,7 @@ for (const entry of iterator1) {
 
 - `Set.forEach()` : La méthode forEach() permet d'exécuter une fonction donnée, une fois pour chaque valeur de l'ensemble Set. L'ordre appliqué est celui dans lequel les valeurs ont été ajoutées à l'ensemble.
 
-```
+```js
 monSet.forEach(callback[, thisArg])
 
 // exemple :
@@ -103,7 +103,7 @@ new Set(['foo', 'bar', undefined]).forEach(logSetElements);
 
 - `Set.has()` : La méthode has() renvoie un booléen qui indique s'il existe un élément de l'ensemble Set avec une certaine valeur.
 
-```
+```js
 monSet.has(valeur);
 
 // exemple :
@@ -123,7 +123,7 @@ console.log(set1.has(6));
 
 La méthode keys() est un alias pour cette méthode (afin de conserver une certaine similarité avec les objets Map) et se comportera exactement de la même façon en renvoyant les valeurs des éléments du Set.
 
-```
+```js
 monSet.values();
 
 // exemple :

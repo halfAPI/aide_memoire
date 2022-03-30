@@ -26,13 +26,13 @@ Il existe deux façon d'écrire une regex:
 
 - De manière littérale : 
 
-```
+```js
 let regex = /expression/;
 ```
 
 - Avec le constructeur `new RegExp()` :
 
-```
+```js
 let regex = new RegExp('expression');
 ```
 
@@ -48,7 +48,7 @@ Il s'agit d'une méthode de l'objet `String` permettant de rechercher la présen
 
 Il faut noter que la méthode match() ne renvoie par défaut que la première correspondance ! Pour avoir toutes les correspondances, il est nécessaire d'indiquer que l'on fait une rechercher globale au moyen de `/regex/g`.
 
-```
+```js
 let chaine = "Les regex c'est trop Cool!";
 
 let regex = /[A-Z]/ ;
@@ -64,7 +64,7 @@ console.log(chaine.match(regex2)) //null
 
 Cette méthode permet d'effectuer une recherche dans une chaine de caractère. La différence avec la méthode `match()` est qu'ici, on va avoir un retour sur la position à laquelle se trouve la première occurence de l'expression. 
 
-```
+```js
 let chaine = "Les regex c'est trop Cool!";
 
 let regex = /[A-Z]/ ;
@@ -82,7 +82,7 @@ Il s'agit d'une méthode permettant de rechercher un pattern bien précis et le 
 
 Tout comme `match()`, on peut travailler de façon globale sur la méthode `replace()`.
 
-```
+```js
 let chaine = "Les regex c'est trop Cool!";
 
 let regex = /[A-Z]/ ;
@@ -98,7 +98,7 @@ console.log(chaine.replace(regex2, 'formidable')) //Les regex c'est trop formida
 
 Il s'agit d'une méthode qui permet de diviser ou casser une chaine de caractères en fonction d'un séparateur défini.
 
-```
+```js
 let chaine = "Les regex c'est trop Cool!";
 
 let regex = /[A-Z]/ ;
@@ -110,7 +110,7 @@ console.log(chaine.split(regex)) //L,es regex c'est trop C,ool!
 
 Cette méthode va rechercher des correspondances entre une chaine et une regex. Cette méthode retourne un tableau avec les résultats si au moins une correspondance a été trouvée. 
 
-```
+```js
 let chaine = "Les regex c'est trop Cool!";
 
 let regex = /[A-Z]/ ;
@@ -123,7 +123,7 @@ console.log(table[0]) //L
 
 Cette méthode permet de tester une correspondance mais va renvoyer un booléen. 
 
-```
+```js
 let chaine = "Les regex c'est trop Cool!";
 
 let regex = /[A-Z]/ ;
@@ -141,7 +141,7 @@ La déclaration d'une classe de caractères se fait au moyen des crochets `[]`
 
 Voici quelques exemples de classes de caractères : 
 
-```
+```js
 // Chercher une voyelle
 let regex1 = /[aeuioy]/g;
 
@@ -166,7 +166,7 @@ Il en existe de très nombreux mais lorsqu'un métacaractère est associé à un
 
 Voyons quelques exemples : 
 
-```
+```js
 // Chercher autre chose qu'une voyelle dans la chaine
 let regex = /[^aeyuio]/g;
 
@@ -212,7 +212,7 @@ On va donc utiliser ce qu'on appelle des classes abrégées pour indiquer qu'on 
 
 Voyons quelques exemples : 
 
-```
+```js
 // Correspond à un caractère alphanumérique ou "_"
 let regex = /\w/g;
 
@@ -232,7 +232,7 @@ let regex = /[\da-z]/g;
 
 Le métacaractère point `.` permet de rechercher n'importe quel caractère à l'exception du caractère pour une nouvelle ligne.
 
-```
+```js
 //Un "o" suivi par n'importe quel caractère sauf \n
 let regex = /o./g; 
 
@@ -250,7 +250,7 @@ let regex = /[o.]/g;
 
 Le métacaractère `|` permet de proposer des alternatives. Cela correspond +/- à "OU". 
 
-```
+```js
 // un "o" ou un "j"
 let regex = /o|j/g;
 ```
@@ -261,7 +261,7 @@ Les deux caractères `^` et `$` vont permettre d'ancrer les regex.
 
 L'ancre `^` permet d'exprimer le fait qu'on recherche le caractère en début de la chaine. Alors que l'ancre `$` permet d'exprimer la recherche du caractère en fin de chaine. 
 
-```
+```js
 // n'importe quel caractère en début de chaine sauf \n
 let regex = /^./g;
 
@@ -305,7 +305,7 @@ Les métacaractères décrivant les sous masques sont `()`. Un sous masque est u
 
 Les parenthèses forment ce qu'on appelle des sous masques **capturants**. Cela signifie que lorsqu'un sous masque est trouvé dans la chaine, la correspondance sera gardée en mémoire et pourra être réutilisée par la suite. 
 
-```
+```js
 //correspondance : "er" ou "et" + capture r ou t
 let regex = /e(r|t)/g;
 
@@ -353,7 +353,7 @@ Voici une liste des options les plus utiles :
 | `m`    | Il s'agit d'une option permettant de tenir compte des caractères de retour à la ligne et donc les ancres `^ $` vont pouvoir être utilisées un début et une fin de ligne|
 | `s`    | Permet au métacaractère `.` de remplacer n'importe quel caractère, y compris un `\n` |
 
-```
+```js
 // Cherche "becode" exactement
 let regex = /becode/; 
 

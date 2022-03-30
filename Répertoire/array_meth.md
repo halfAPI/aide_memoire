@@ -8,7 +8,7 @@ Dans cette section, seule les méthodes seront définies. Pour plus d'exemples, 
 
 - `Array.concat()` : La méthode concat() est utilisée afin de fusionner deux ou plusieurs tableaux en les concaténant. Cette méthode ne modifie pas les tableaux existants, elle renvoie un nouveau tableau qui est le résultat de l'opération.
 
-```
+```js
 concat(valeur0, valeur1)
 
 // exemple :
@@ -19,7 +19,7 @@ const array3 = array1.concat(array2);
 
 - `Array.copyWithin()` : La méthode copyWithin() effectue une copie superficielle d'une partie d'un tableau sur ce même tableau et le renvoie, sans modifier sa taille.
 
-```
+```js
 arr.copyWithin(cible)
 arr.copyWithin(cible, début)
 arr.copyWithin(cible, début, fin)
@@ -31,7 +31,8 @@ console.log(array1.copyWithin(0, 3, 4));
 ```
 
 - `Array.entries()` : La méthode entries() renvoie un nouvel objet qui contient le couple clef/valeur pour chaque éléments du tableau.
-```
+
+```js
 arr.entries()
 
 // exemple :
@@ -43,7 +44,7 @@ console.log(iterator1.next().value);
 
 - `Array.every()` : La méthode every() permet de tester si tous les éléments d'un tableau vérifient une condition donnée par une fonction en argument. Cette méthode renvoie un booléen pour le résultat du test.
 
-```
+```js
 arr.every(callback[, thisArg])
 
 // exemple :
@@ -55,7 +56,7 @@ console.log(array1.every(isBelowThreshold));
 
 - `Array.fill()` : La méthode fill() remplit tous les éléments d'un tableau entre deux index avec une valeur statique. La valeur de l'index de fin n'est pas incluse. Cette méthode renvoie le tableau modifié.
 
-```
+```js
 arr.fill(valeur)
 arr.fill(valeur, début)
 arr.fill(valeur, début, fin)
@@ -69,7 +70,7 @@ console.log(array1.fill(0, 2, 4));
 
 - `Array.filter()` : La méthode filter() crée et retourne un nouveau tableau contenant tous les éléments du tableau d'origine qui remplissent une condition déterminée par la fonction callback.
 
-```
+```js
 arr.filter(callback);
 
 // exemple :
@@ -81,7 +82,7 @@ console.log(result);
 
 - `Array.find()` : La méthode find() renvoie la valeur du premier élément trouvé dans le tableau qui respecte la condition donnée par la fonction de test passée en argument. Sinon, la valeur undefined est renvoyée.
 
-```
+```js
 arr.find(callback(element[, index[, tableau]])[, thisArg])
 
 // exemple :
@@ -93,7 +94,7 @@ console.log(found);
 
 - `Array.findIndex()` : La méthode findIndex() renvoie l'indice du premier élément du tableau qui satisfait une condition donnée par une fonction. Si la fonction renvoie faux pour tous les éléments du tableau, le résultat vaut -1.
 
-```
+```js
 arr.findIndex(callback(element[, index[, tableau]])[, thisArg])
 
 // exemple :
@@ -104,14 +105,14 @@ console.log(array1.findIndex(isLargeNumber));
 ```
 
 - `Array.flat()` : La méthode flat() permet de créer un nouveau tableau contenant les éléments des sous-tableaux du tableau passé en argument, qui sont concaténés récursivement pour atteindre une profondeur donnée.
-```
-var nouveauTableau = monTableau.flat([profondeur]);
+```js
+let nouveauTableau = monTableau.flat([profondeur]);
 ```
 
 - `Array.flatMap()` : La méthode flatMap() permet d'appliquer une fonction à chaque élément du tableau puis d'aplatir le résultat en un tableau. Cela correspond à l'enchaînement de `Array.prototype.map()` suivi de `Array.prototype.flat()` de profondeur 1. flatMap est plus efficace que la combinaison de ces deux opérations, souvent réalisées conjointement.
 
-```
-var new_array = arr.flatMap(function callback(currentValue[, index[, array]]) {
+```js
+let new_array = arr.flatMap(function callback(currentValue[, index[, array]]) {
     // return element for new_array
 }[, thisArg])
 
@@ -119,7 +120,7 @@ var new_array = arr.flatMap(function callback(currentValue[, index[, array]]) {
 
 - `Array.forEach()` : La méthode forEach() permet d'exécuter une fonction donnée sur chaque élément du tableau.
 
-```
+```js
 arr.forEach(callback);
 
 // exemple :
@@ -130,19 +131,9 @@ array1.forEach(element => console.log(element));
 // expected output: "c"
 ```
 
-- `Array.concat()` : La méthode concat() est utilisée afin de fusionner deux ou plusieurs tableaux en les concaténant. Cette méthode ne modifie pas les tableaux existants, elle renvoie un nouveau tableau qui est le résultat de l'opération.
-
-```
-
-// exemple :
-const array1 = ['a', 'b', 'c'];
-const array2 = ['d', 'e', 'f'];
-const array3 = array1.concat(array2);
-```
-
 - `Array.from()` : La méthode Array.from() permet de créer une nouvelle instance d'Array à partir d'un objet itérable ou semblable à un tableau.
 
-```
+```js
 console.log(Array.from('foo'));
 // expected output: Array ["f", "o", "o"]
 
@@ -153,7 +144,7 @@ console.log(Array.from('foo'));
 
 - `Array.includes()` : La méthode includes() permet de déterminer si un tableau contient une valeur et renvoie true si c'est le cas, false sinon.
 
-```
+```js
 array.includes(élémentRecherché)
 array.includes(élémentRecherché, indiceDépart)
 
@@ -165,7 +156,7 @@ console.log(array1.includes(2));
 
 - `Array.indexOf()` : La méthode indexOf() renvoie le premier indice pour lequel on trouve un élément donné dans un tableau. Si l'élément cherché n'est pas présent dans le tableau, la méthode renverra -1.
 
-```
+```js
 arr.indexOf(élémentRecherché)
 arr.indexOf(élémentRecherché, indiceDébut)
 
@@ -177,13 +168,13 @@ console.log(beasts.indexOf('bison'));
 
 - `Array.isArray()` : La méthode Array.isArray() permet de déterminer si l'objet passé en argument est un objet Array, elle renvoie true si le paramètre passé à la fonction est de type Array et false dans le cas contraire
 
-```
+```js
 Array.isArray(value)
 ```
 
 - `Array.join()` : La méthode join() crée et renvoie une nouvelle chaîne de caractères en concaténant tous les éléments d'un tableau. La concaténation utilise la virgule ou une autre chaîne, fournie en argument, comme séparateur.
 
-```
+```js
 arr.join()
 arr.join(séparateur)
 
@@ -198,7 +189,7 @@ console.log(elements.join(''));
 
 - `Array.keys()` : La méthode keys() renvoie un nouvel objet Array qui contient les clefs pour chaque indice du tableau.
 
-```
+```js
 arr.keys()
 
 // exemple :
@@ -215,7 +206,7 @@ for (const key of iterator) {
 
 - `Array.lastIndexOf()` : La méthode lastIndexOf() permet de renvoyer le dernier indice pour lequel une valeur donnée est présente dans un tableau. Si la valeur recherchée n'est pas présente, le résultat sera -1. Lors de la recherche, le tableau est parcouru dans le sens des index décroissants, à partir de l'index indexDébut.
 
-```
+```js
 arr.lastIndexOf(élémentRecherché)
 arr.lastIndexOf(élémentRecherché, indexDébut)
 
@@ -227,7 +218,7 @@ console.log(animals.lastIndexOf('Dodo'));
 
 - `Array.map()` : La méthode map() crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
 
-```
+```js
 var nouveauTableau = arr.map(callback [, thisArg])
 
 // exemple :
@@ -241,19 +232,19 @@ console.log(map1);
 
 - `Array.pop()` : La méthode pop() supprime le dernier élément d'un tableau et retourne cet élément. Cette méthode modifie la longueur du tableau.
 
-```
+```js
 arr.pop()
 ```
 
 - `Array.push()` : La méthode push() ajoute un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle taille du tableau
 
-```
+```js
 arr.push(élément1, ..., élémentN)
 ```
 
 - `Array.reduce()` : La méthode reduce() applique une fonction qui est un « accumulateur » et qui traite chaque valeur d'une liste (de la gauche vers la droite) afin de la réduire à une seule valeur.
 
-```
+```js
 arr.reduce(callback)
 arr.reduce(callback, valeurInitiale)
 
@@ -270,7 +261,7 @@ console.log(sumWithInitial);
 
 - `Array.reduceRigth()` : La méthode reduceRight() applique une fonction sur un accumulateur et chaque valeur d'un tableau (de la droite vers la gauche) de sorte à réduire le tableau en une seule valeur.
 
-```
+```js
 arr.reduceRight(callback[, valeurInitiale])
 
 // exemple :
@@ -283,7 +274,7 @@ console.log(array1);
 
 - `Array.reverse()` : La méthode reverse() transpose les éléments d'un tableau : le premier élément devient le dernier et le dernier devient le premier et ainsi de suite.
 
-```
+```js
 arr.reverse()
 
 // exemple :
@@ -295,13 +286,13 @@ console.log('reversed:', reversed);
 
 - `Array.shift()` : La méthode shift() permet de retirer le premier élément d'un tableau et de renvoyer cet élément. Cette méthode modifie la longueur du tableau.
 
-```
+```js
 arr.shift()
 ```
 
 - `Array.slice()` : La méthode slice() renvoie un objet tableau, contenant une copie superficielle d'une portion du tableau d'origine, la portion est définie par un indice de début et un indice de fin (exclus). Le tableau original ne sera pas modifié.
 
-```
+```js
 arr.slice()
 arr.slice(début)
 arr.slice(début, fin)
@@ -315,7 +306,7 @@ console.log(animals.slice(2));
 
 - `Array.some()` : La méthode some() teste si au moins un élément du tableau passe le test implémenté par la fonction fournie. Elle renvoie un booléen indiquant le résultat du test.
 
-```
+```js
 arr.some(callback[, objetThis])
 
 // exemple :
@@ -328,7 +319,7 @@ console.log(array.some(even));
 
 - `Array.sort()` : La méthode sort() trie les éléments d'un tableau, dans ce même tableau, et renvoie le tableau.
 
-```
+```js
 arr.sort()
 arr.sort(fonctionComparaison)
 
@@ -342,7 +333,7 @@ console.log(months);
 
 - `Array.splice()` : La méthode splice() modifie le contenu d'un tableau en retirant des éléments et/ou en ajoutant de nouveaux éléments à même le tableau. On peut ainsi vider ou remplacer une partie d'un tableau.
 
-```
+```js
 var tabElementsSupprimes = array.splice(début, nbASupprimer[, élem1[, élem2[, ...]]])
 
 // exemple :
@@ -354,7 +345,7 @@ console.log(months);
 
 - `Array.toLocaleString()` : La méthode toLocaleString() renvoie une chaîne de caractères qui représente les éléments du tableau. Les éléments sont convertis en chaînes de caractères grâce à leurs méthodes toLocaleString et chacune de ces chaînes est séparée des autres avec un séparateur propre à la locale courante (par exemple une virgule ou un point).
 
-```
+```js
 arr.toLocaleString();
 arr.toLocaleString(locales);
 arr.toLocaleString(locales, options);
@@ -368,7 +359,7 @@ console.log(localeString);
 
 - `Array.toString()` : La méthode toString() renvoie une chaine de caractères représentant le tableau spécifié et ses éléments.
 
-```
+```js
 arr.toString()
 
 // exemple :
@@ -379,13 +370,13 @@ console.log(array1.toString());
 
 - `Array.unshift()` : La méthode unshift() ajoute un ou plusieurs éléments au début d'un tableau et renvoie la nouvelle longueur du tableau.
 
-```
+```js
 arr.unshift([élém1[, ...[, élémN]]])
 ```
 
 - `Array.values()` : La méthode values() renvoie un nouvel objet Array Iterator qui contient les valeurs pour chaque indice du tableau.
 
-```
+```js
 var a = ['t', 'i', 't', 'o', 'u'];
 var iterateur = a.values();
 ```

@@ -27,7 +27,7 @@ Il existe des méthode permettant de gérer les potentielles erreurs et indiquer
 
 Nous allons placer le code à tester (celui qui peut potentiellement générer une erreur) au sein de notre bloc `try` puis allons capturer l’erreur potentielle dans le bloc `catch` et indiquer comment la gérer. 
 
-```
+```js
 try{
     alert('Bonjour');  
 }catch(err){
@@ -45,7 +45,7 @@ Il s'agit en gros d'une exception. C'est une erreur qu'on va déclencher à la p
 
 Pour définir une exception, on déclare via le constructeur `new Error()`
 
-```
+```js
 function div(){
     let x = prompt('Entrez un premier nombre (numérateur)');
     let y = prompt('Entrez un deuxième nombre (dénominateur)');
@@ -72,7 +72,7 @@ Il s'agit d'un bloc optionnel placé après un `try...catch`. Ce bloc permet d'e
 
 Le bloc `finally` va être particulièrement utile dans le cas où on veut absolument effectuer certaines opérations même si une exception est levée comme par exemple récupérer une certaine valeur
 
-```
+```js
 function div(){
     let x = prompt('Entrez un premier nombre (numérateur)');
     let y = prompt('Entrez un deuxième nombre (dénominateur)');
@@ -107,11 +107,11 @@ Le mode script laisse passer moins d'erreurs (comme les erreurs de syntaxes) que
 
 Pour active le mode strict sur un script, il suffit d'utiliser `use strict` en début de script ou à un endroit bien précis. 
 
-```
+```js
 use strict 
 // du code 
 
-=====================================================OU
+//=====================================================OU
 
 let variable = 5 
 

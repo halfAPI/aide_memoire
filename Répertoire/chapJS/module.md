@@ -16,12 +16,12 @@ Les éléments qui peuvent être exportés sont précédés de la mention `expor
 
 Créons un module `module.js` : 
 
-```
+```js
 /*
  *====================
  *     module.js
  *====================
- *
+ */
 
 export function disBonjour(prenom) {
     alert('bonjour' + prenom);
@@ -34,12 +34,12 @@ function nomComplet(prenom, nom) {
 
 Maintenant on va importer la fonction dans un autre script `cours.js` :
 
-```
+```js
 /*
  *====================
  *      cours.js
  *====================
- *
+ */
 
 import {disBonjour} from './module.js'
 
@@ -50,7 +50,7 @@ disBonjour("loic")
 
 De plus, dans la structure `head` du html, il faudra préciser qu'on importe un module : 
 
-```
+```js
 <script type="module" src="cours.js" async></script>
 ```
 

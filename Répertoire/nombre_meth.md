@@ -7,7 +7,7 @@ Dans cette section, seule les méthodes seront définies. Pour plus d'exemples, 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
 
 - `Number.isFinite()` : La méthode Number.isFinite() permet de déterminer si la valeur fournie est un nombre fini.
-```
+```js
 Number.isFinite(valeurÀTester);
 
 // exemple :
@@ -17,7 +17,7 @@ console.log(Number.isFinite(1 / 0));
 
 - `Number.isInteger()` : La méthode Number.isInteger() permet de déterminer si l'argument est un nombre entier.
 
-```
+```js
 Number.isInteger(valeurÀTester)
 
 // exemple :
@@ -33,7 +33,7 @@ console.log(fits(5, 10));
 
 - `Number.isNaN()` : La méthode Number.isNaN() permet de déterminer si la valeur passée en argument est NaN, avec un type Number. 
 
-```
+```js
 Number.isNaN(valeurÀTester)
 
 // exemple :
@@ -51,13 +51,13 @@ console.log(typeOfNaN('100F'));
 
 - `Number.isSafeInteger()` : La méthode Number.isSafeInteger() permet de déterminer si la valeur, passée en argument, est un entier représentable correctement en JavaScript 
 
-```
+```js
 Number.isSafeInteger(valeurÀTester)
 ```
 
 - `Number.parseFloat()` : La méthode Number.parseFloat() analyse et convertit une chaîne de caractères en un nombre flottant. 
 
-```
+```js
 Number.parseFloat(chaîne)
 
 // exemple :
@@ -73,7 +73,7 @@ console.log(circumference('4.567abcdefgh'));
 
 - `Number.parseInt()` : La méthode Number.parseInt() analyse et convertit une chaine de caractères, fournie en argument, en un entier dans la base souhaitée.
 
-```
+```js
 Number.parseInt(chaîne [, base])
 
 // exemple :
@@ -90,7 +90,7 @@ console.log(roughScale(' 0xF', 16));
 
 - `Number.toExponential()` : La méthode toExponential() renvoie une chaîne de caractères, représentant l'objet Number en notation exponentielle.
 
-```
+```js
 numObj.toExponential([nbChiffresDécimaux])
 
 // exemple :
@@ -103,7 +103,7 @@ console.log(expo(123456, 2));
 
 - `Number.toFixed()` : La méthode toFixed() permet de formater un nombre en notation à point-fixe.
 
-```
+```js
 numObj.toFixed([nbChiffres])
 
 // exemple :
@@ -116,7 +116,7 @@ console.log(financial(123.456));
 
 - `Number.toLocaleString()` : La méthode toLocaleString() permet de renvoyer une chaîne de caractères représentant un nombre en tenant compte de la locale.
 
-```
+```js
 objetNumber.toLocaleString([locales [, options]])
 
 // exemple :
@@ -130,7 +130,7 @@ console.log(eArabic(123456.789));
 
 - `Number.toPrecision()` : La méthode toPrecision() renvoie une chaîne de caractères représentant un nombre avec la précision donnée.
 
-```
+```js
 numObj.toPrecision([précision])
 
 // exemple :
@@ -143,7 +143,7 @@ console.log(precise(123.456));
 
 - `Number.toString()` : La méthode toString() renvoie une chaîne de caractère représentant l'objet Number.
 
-```
+```js
 numObj.toString([base])
 
 // exemple :
@@ -159,7 +159,7 @@ console.log(hexColour(233));
 
 - `Number.valueOf()` : La méthode valueOf() renvoie la valeur primitive correspondant à celle représentée par l'objet Number.
 
-```
+```js
 objetNumber.valueOf()
 
 // exemple :

@@ -8,7 +8,7 @@ Dans cette section, seule les méthodes seront définies. Pour plus d'exemples, 
 
 - `String.chartAt()` : La méthode charAt() renvoie une nouvelle chaîne contenant le caractère (ou, plus précisément, le point de code UTF-16) à la position indiquée en argument.
 
-```
+```js
 str.charAt(index)
 
 // exemple :
@@ -20,7 +20,7 @@ console.log(`The character at index ${index} is ${sentence.charAt(index)}`);
 
 - `String.charCodeAt()` : La méthode charCodeAt() retourne un entier compris entre 0 et 65535 qui correspond au code UTF-16 d'un caractère de la chaîne situé à une position donnée.
 
-```
+```js
 str.charCodeAt(indice)
 
 // exemple :
@@ -33,7 +33,7 @@ console.log(`The character code ${sentence.charCodeAt(index)} is equal to ${sent
 
 - `String.codePointAt()` : La méthode codePointAt() renvoie un entier positif qui correspond au code Unicode (code point) du caractère de la chaîne à la position donnée.
 
-```
+```js
 str.codePointAt(pos)
 
 // exemple :
@@ -44,7 +44,7 @@ console.log(icons.codePointAt(1));
 
 - `String.concat()` : La méthode concat() combine le texte de plusieurs chaînes avec la chaîne appelante et renvoie la nouvelle chaîne ainsi formée.
 
-```
+```js
 concat(valeur0, valeur1)
 
 // exemple :
@@ -56,7 +56,7 @@ console.log(str1.concat(' ', str2));
 
 - `String.concat()` : La méthode concat() est utilisée afin de fusionner deux ou plusieurs tableaux en les concaténant. Cette méthode ne modifie pas les tableaux existants, elle renvoie un nouveau tableau qui est le résultat de l'opération.
 
-```
+```js
 str.concat(string2[, string3, ..., stringN])
 
 // exemple :
@@ -67,7 +67,7 @@ const array3 = array1.concat(array2);
 
 - `String.endsWith()` : La méthode endsWith() renvoie un booléen indiquant si la chaine de caractères se termine par la chaine de caractères fournie en argument.
 
-```
+```js
 str.endsWith(chaîneRecherchée[, position]);
 
 // exemple :
@@ -78,7 +78,7 @@ console.log(str1.endsWith('best', 17));
 
 - `String.fromCharCode()` : La méthode statique String.fromCharCode() renvoie une chaîne de caractères créée à partir de points de code UTF-16.
 
-```
+```js
 String.fromCharCode(num1, ..., numN)
 
 // exemple :
@@ -88,7 +88,7 @@ console.log(String.fromCharCode(189, 43, 190, 61));
 
 - `String.fromCodePoint()` : La méthode statique String.fromCodePoint() renvoie une chaîne de caractères créée à partir d'un suite de codets.
 
-```
+```js
 String.fromCodePoint(num1[, ...[, numN]])
 
 // exemple :
@@ -98,7 +98,7 @@ console.log(String.fromCodePoint(9731, 9733, 9842, 0x2F804));
 
 - `String.includes()` : La méthode includes() détermine si une chaîne de caractères est contenue dans une autre et renvoie true ou false selon le cas de figure.
 
-```
+```js
 concat(valeur0, valeur1)
 
 // exemple :
@@ -109,7 +109,7 @@ const array3 = array1.concat(array2);
 
 - `String.concat()` : La méthode concat() est utilisée afin de fusionner deux ou plusieurs tableaux en les concaténant. Cette méthode ne modifie pas les tableaux existants, elle renvoie un nouveau tableau qui est le résultat de l'opération.
 
-```
+```js
 str.includes(chaîneRecherchée);
 str.includes(chaîneRecherchée, position);
 
@@ -123,20 +123,20 @@ console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in 
 
 - `String.indexOf()` : La méthode indexOf() renvoie l'indice de la première occurence de la valeur cherchée au sein de la chaîne courante (à partir de indexDébut). Elle renvoie -1 si la valeur cherchée n'est pas trouvée.
 
-```
+```js
 str.indexOf(valeurRecherchée)
 str.indexOf(valeurRecherchée, indexDébut)
 ```
 
 - `String.lastIndexOf()` : La méthode lastIndexOf() renvoie l'indice, dans la chaîne courante, de la dernière occurence de la valeur donnée en argument. Si cette sous-chaîne n'est pas trouvée, la méthode renvoie -1. La recherche s'effectue de la fin vers le début de la chaîne, à partir de indiceDébut.
 
-```
+```js
 str.lastIndexOf(valeurRecherchée[, indiceDébut])
 ```
 
 - `String.match()` : La méthode match() permet d'obtenir le tableau des correspondances entre la chaîne courante et une expression rationnelle.
 
-```
+```js
 str.match(regexp)
 
 // exemple :
@@ -149,7 +149,7 @@ console.log(found);
 
 - `String.matchAll()` : La méthode matchAll() renvoie un itérateur contenant l'ensemble des correspondances entre une chaîne de caractères d'une part et une expression rationnelle d'autre part (y compris les groupes capturants).
 
-```
+```js
 str.matchAll(regexp)
 
 // exemple :
@@ -163,7 +163,7 @@ console.log(array[0]);
 
 - `String.normalize()` : La méthode normalize() permet de renvoyer la forme normalisée Unicode d'une chaîne de caractères.
 
-```
+```js
 str.normalize([form]);
 
 // exemple :
@@ -175,7 +175,7 @@ console.log(`${name1}, ${name2}`);
 
 - `String.padEnd()` : La méthode padEnd() permet de compléter la chaîne courante avec une chaîne de caractères donnée afin d'obtenir une chaîne de longueur fixée. Pour atteindre cette longueur, la chaîne complémentaire peut être répétée. La chaîne courante est complétée depuis la fin.
 
-```
+```js
 str.padEnd(longueurCible [, chaîneComplémentaire])
 
 // exemple :
@@ -186,7 +186,7 @@ console.log(str1.padEnd(25, '.'));
 
 - `String.padStart()` : La méthode padStart() permet de compléter la chaîne courante avec une chaîne de caractères donnée afin d'obtenir une chaîne de longueur fixée. Pour atteindre cette longueur, la chaîne complémentaire peut être répétée. La chaîne courante est complétée depuis le début.
 
-```
+```js
 str.padStart(longueurCible [, chaîneComplémentaire])
 
 // exemple :
@@ -197,7 +197,7 @@ console.log(str1.padStart(2, '0'));
 
 - `String.raw()` : La méthode statique String.raw() est une fonction d'étiquetage (tag function) pour les gabarits de chaînes de caractères (elle est semblable au préfixe r en Python ou au préfixe @ en C#). Cette fonction permet d'obtenir la chaîne brute pour un gabarit (les caractères spéciaux ne sont pas pris en compte mais retranscrits tels quels, les séquences d'échappement ne sont pas interprétées et les emplacements (ex. ${toto}) sont traités).
 
-```
+```js
 String.raw(callSite, ...substitutions)
 
 String.raw`gabaritChaîne`
@@ -210,7 +210,7 @@ console.log(`The file was uploaded from: ${filePath}`);
 
 - `String.repeat()` : La méthode repeat() construit et renvoie une nouvelle chaine de caractères qui contient le nombre de copie demandée de la chaine de caractères sur laquelle la méthode a été appelée, concaténées les unes aux autres.
 
-```
+```js
 str.repeat(compte)
 
 // exemple :
@@ -226,7 +226,7 @@ console.log(`Chorus lyrics for "Happy": ${chorus.repeat(27)}`);
 
 La chaîne de caractère originale reste inchangée.
 
-```
+```js
 chn.replace(regexp|souschn, nouvSouschn|fonction)
 
 // exemple :
@@ -239,13 +239,13 @@ console.log(p.replace('dog', 'monkey'));
 
 La chaîne de caractères initiale restera inchangée.
 
-```
+```js
 const newStr = str.replaceAll(regexp|substr, newSubstr|function)
 ```
 
 - `String.search()` : La méthode search() éxecute une recherche dans une chaine de caractères grâce à une expression rationnelle appliquée sur la chaîne courante.
 
-```
+```js
 str.search(regexp)
 
 // exemple :
@@ -257,7 +257,7 @@ console.log(paragraph.search(regex));
 
 - `String.split()` : La méthode split() divise une chaîne de caractères en une liste ordonnée de sous-chaînes, place ces sous-chaînes dans un tableau et retourne le tableau. La division est effectuée en recherchant un motif ; où le motif est fourni comme premier paramètre dans l'appel de la méthode.
 
-```
+```js
 str.split([separator[, limit]])
 
 // exemple :
@@ -270,7 +270,7 @@ console.log(words[3]);
 
 - `String.startsWith()` : La méthode startsWith() renvoie un booléen indiquant si la chaine de caractères commence par la deuxième chaine de caractères fournie en argument.
 
-```
+```js
 str.startsWith(chaîneRecherchée [, position]);
 
 // exemple :
@@ -281,7 +281,7 @@ console.log(str1.startsWith('Sat'));
 
 - `String.substring()` : La méthode substring() retourne une sous-chaîne de la chaîne courante, entre un indice de début et un indice de fin.
 
-```
+```js
 str.substring(indiceA[, indiceB])
 
 // exemple :
@@ -292,7 +292,7 @@ console.log(str.substring(1, 3));
 
 - `String.toLocaleLowerCase()` : La méthode toLocaleLowerCase() renvoie la chaîne de caractères qui appelle la méthode en une chaîne de caractères représentées en minuscules, en tenant compte des correspondances de caractères propres aux différentes locales.
 
-```
+```js
 str.toLocaleLowerCase()
 str.toLocaleLowerCase(locale)
 str.toLocaleLowerCase([locale, locale, ...])
@@ -305,7 +305,7 @@ console.log(`EN-US: ${dotted.toLocaleLowerCase('en-US')}`);
 
 - `String.toLocaleUpperCase()` : La méthode toLocaleUpperCase() renvoie la chaîne de caractères qui appelle la méthode en caractères majuscules, selon les correspondances de caractères propres aux différentes locales.
 
-```
+```js
 str.toLocaleUpperCase()
 str.toLocaleUpperCase(locale)
 str.toLocaleUpperCase([locale, locale, ...])
@@ -318,13 +318,13 @@ console.log(city.toLocaleUpperCase('TR'));
 
 - `String.toLowerCase()` : La méthode toLowerCase() retourne la chaîne de caractères courante en minuscules.
 
-```
+```js
 str.toLowerCase()
 ```
 
 - `String.toString()` : La méthode toString() renvoie une chaine de caractères représentant l'objet renseigné.
 
-```
+```js
 str.toString()
 
 // exemple :
@@ -335,13 +335,13 @@ console.log(stringObj);
 
 - `String.toUpperCase()` : La méthode toUpperCase() retourne la valeur de la chaîne courante, convertie en majuscules.
 
-```
+```js
 str.toUpperCase()
 ```
 
 - `String.trim()` : La méthode trim() permet de retirer les blancs en début et fin de chaîne. Les blancs considérés sont les caractères d'espacement (espace, tabulation, espace insécable, etc.) ainsi que les caractères de fin de ligne (LF, CR, etc.).
 
-```
+```js
 str.trim()
 
 // exemple :
@@ -352,7 +352,7 @@ console.log(greeting.trim());
 
 - `String.trimEnd()` : La méthode trimEnd() permet de retirer les blancs situés à la fin d'une chaîne de caractères. trimRight() est un synonyme pour cette méthode.
 
-```
+```js
 str.trimEnd();
 str.trimRight();
 
@@ -364,7 +364,7 @@ console.log(greeting.trimEnd());
 
 - `String.trimStart()` : La méthode trimStart() permet de retirer les blancs au début de la chaîne de caractères. trimLeft() est un synonyme pour cette méthode.
 
-```
+```js
 str.trimStart();
 str.trimLeft();
 
@@ -376,7 +376,7 @@ console.log(greeting.trimStart());
 
 - `String.valueOf()` : La méthode valueOf() renvoie la valeur primitive de l'objet String.
 
-```
+```js
 str.valueOf()
 ```
 

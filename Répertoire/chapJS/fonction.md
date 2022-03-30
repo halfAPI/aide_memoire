@@ -24,7 +24,7 @@ Pour exécuter le code d'une fonction, il faut **l'appeler**. Il suffit d'écrir
 
 On crée une fonction personnalisée grâce au mot clé `function`.
 
-```
+```js
 function exemple() {
     //bloc de code
 }
@@ -56,7 +56,7 @@ Ce sont des fonctions qui ne possèdent pas de nom. Et lorsque l'on crée une fo
 
 On utilisera ce genre de fonction lorsque l'on n'a pas besoin d'appeler notre fonction par son nom. 
 
-```
+```js
 function(){
     alert("Alerte exécutée par une fonction anonyme");
 }
@@ -75,7 +75,7 @@ Il s'agit d'une façon d'exécuter d'une fonction anonyme (ou d'une fonction nom
 
 Pour créer une fonction auto-invoquée à partir d’une fonction, il va tout simplement falloir rajouter un couple de parenthèses autour de la fonction et un second après le code de la fonction.
 
-```
+```js
 //Fonction anonyme
 (function(){alert("Coucou!")})
 
@@ -87,7 +87,7 @@ Pour créer une fonction auto-invoquée à partir d’une fonction, il va tout s
 
 Une fonction récursive est une fonction qui va s'appeler elle-même au sein de son code. 
 
-```
+```js
 function decompte(t) {
     if (t>0) {
         return decompte(t-1);

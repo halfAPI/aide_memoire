@@ -29,7 +29,7 @@ Il existe trois paradigmes de programmation particulièrement populaires, c’es
 
 Le Javascript est un langage qui possède un fort potention pour la programmation orientée objet. Voici un exemple d'objet :
 
-```
+```js
 // utilisateur est un objet
 let utilisateur = {
     // nom, age et mail sont des propriétés de l'objet. 
@@ -66,7 +66,7 @@ Dans cette sous-section, on va utiliser la première façon.
 
 Il s'agit de la façon "classique" de crée un objet. On parle de littéral car on a littérallement constuit les propriétés et méthodes à la construction de l'objet. 
 
-```
+```js
 // utilisateur est un objet
 let utilisateur = {
     // nom, age et mail sont des propriétés de l'objet. 
@@ -85,7 +85,7 @@ let utilisateur = {
 
 Le `.` est ce que l'on appelle un accesseur. Cet accesseur nous permet d'aller chercher la valeur d'un membre mais également de modifier cette valeur.
 
-```
+```js
 // utilisateur est un objet
 let utilisateur = {
     nom : ['Loïc', 'Calcagno']
@@ -113,7 +113,7 @@ utilisateur.taille = 170
 
 On va pouvoir utiliser les crochets pour accéder aux valeurs. Attention! Les méthodes ne sont pas accessibles via les crochets. 
 
-```
+```js
 // utilisateur est un objet
 let utilisateur = {
     nom : ['Loïc', 'Calcagno']
@@ -141,7 +141,7 @@ En gros, c'est un prête nom qui va être remplacé par le nom de l’objet actu
 
 Un constructeur d'objets est une fonction qui va permettre de créer des objets semblables. Il suffit de suivre 2 étapes : 1°/ définir la fonction constructeur et 2°/ appeler ce constructeur.
 
-```
+```js
 //1ère étape : 
 function Utilisateur(n, a, m) {
     this.nom = n;
@@ -159,7 +159,7 @@ let loic = new Utilisateur(["Loïc", "Calcagno"], 29, "loic.calcagno@hotmail.com
 
 Comme on peut le voir, vu que notre constructeur est une fonction, on peut le rappeler autant de fois que l'on veut.
 
-```
+```js
 let pierre = new Utilisateur(['Pierre', 'Giraud'], 29, 'pierre.giraud@edhec.com');
 let mathilde = new Utilisateur(['Math', 'Ml'], 27, 'math@edhec.com');
 let florian = new Utilisateur(['Flo', 'Dchd'], 29, 'flo.dchd@gmail.com');
@@ -181,7 +181,7 @@ Le contenu de la propriété `prototype` d'un constructeur va être partagé par
 
 Cela permet l’héritage en orienté objet JavaScript. On dit qu’un objet « hérite » des membres d’un autre objet lorsqu’il peut accéder à ces membres définis dans l’autre objet. 
 
-```
+```js
 function Utilisateur(n, a, m) {
     this.nom = n;
     this.age = a;
@@ -209,7 +209,7 @@ Pour mettre en place un héritage, on utilise toujours 3 étapes :
 
 - On modifie la `__proto__` de la propriété `prototype` de l'enfant pour qu'elle soit égale au parent
 
-```
+```js
 function Ligne(longueur) {
     this.longueur = longueur;
 }
@@ -261,7 +261,7 @@ Même si JS est un langage basé sur les prototypes, il est possible de travaill
 
 ## Création d'une classe et d'objets en JS
 
-```
+```js
 class Ligne{
     constructor(nom, longueur) {
         this.nom = nom;
@@ -278,7 +278,7 @@ geo1.taille();
 
 ## Classes étendues et héritage
 
-```
+```js
 class Ligne{
     constructor(nom, longueur) {
         this.nom = nom;

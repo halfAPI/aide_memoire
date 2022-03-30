@@ -22,7 +22,7 @@ La commande `console.log` permet de visionner un éléments dans la console.
 
 Pour déclarer une variable, on attribue une valeur à la variable. 
 
-```
+```js
 let phrase = "Coding is fun!";
 ```
 
@@ -62,7 +62,7 @@ Ce sont des éléments de programmation ayant une influence sur le comportement 
 
 Il s'agit d'une boucle qui teste une condition. Si elle n'est pas respectée, la boucle continue.
 
-```
+```js
 let size = 185;
 let weight = 80;
 
@@ -75,7 +75,7 @@ if ((size >= 150) || (weight >= 45)) {
 
 L'opérateur `?` permet de remplacer l'écriture d'une boucle if :
 
-```
+```js
 let size = 185;
 let weight = 80;
 
@@ -86,7 +86,7 @@ let weight = 80;
 
 Il s'agit d'une boucle qui teste une condition de départ. Si elle n'est pas respectée, la boucle continue vers les conditions intermédiaires.
 
-```
+```js
 let size = 185;
 let weight = 80;
 
@@ -103,7 +103,7 @@ if ((size >= 150) || (weight >= 45)) {
 
 Il s'agit d'une boucle qui va répéter le code TANT QU'il n'est pas vrai.
 
-```
+```js
 let i = 1;
 
 while (i <= 100) {
@@ -123,7 +123,7 @@ La boucle for est une version spécilisée de while prenant 3 paramètres :
 
 * le troisième paramètre est la commande qui est exécutée à chaque tour (incrémenter par exemple)
 
-```
+```js
 for (let i = 1; i <= 100; i += 1) {
   console.log(i);
 }
@@ -134,7 +134,7 @@ for (let i = 1; i <= 100; i += 1) {
 
 Il s'agit d'une boucle qui exécute une instruction jusqu'à ce que la condition de test ne soit plus vérifiée. 
 
-```
+```js
 let result = '';
 let i = 0;
 
@@ -148,7 +148,7 @@ do {
 
 L'instruction switch évalue une expression et, selon le résultat obtenu et le cas associé, exécute les instructions correspondantes.
 
-```
+```js
 const expr = 'Papayas';
 switch (expr) {
   case 'Oranges':
@@ -168,7 +168,7 @@ switch (expr) {
 
 L'instruction break permet de terminer la boucle en cours ou l'instruction switch ou label en cours et de passer le contrôle du programme à l'instruction suivant l'instruction terminée.
 
-```
+```js
 let i = 0;
 
 while (i < 6) {
@@ -184,7 +184,7 @@ console.log(i);
 
 L'instruction continue arrête l'exécution des instructions pour l'itération de la boucle courante ou de la boucle étiquetée. L'exécution est reprise à l'itération suivante.
 
-```
+```js
 let text = '';
 
 for (let i = 0; i < 10; i++) {
@@ -206,7 +206,7 @@ Il s'agit de structure assez simple en programmation consistant au stockage d'é
 
 On peut déclarer un array vide ou un array avec des éléments définis à l'intérieur. Ces éléments peuvent être des nombres, des booléens, des chaines de caractères, etc...
 
-```
+```js
 let arrVide = [];
 
 let arrNombre = [1,2,3];
@@ -218,14 +218,14 @@ let arrString = ["pomme", "arbre", "abeille"];
 
 On peut accéder à un élément d'un array grâce à sa position que l'on nomme index. **ATTENTION**, la première position dans un array est la position 0 et non 1.
 
-```
+```js
 let array = ["pomme", "cerise", "abricot"];
 console.log(array[1]); //cerise
 ```
 
 On peut également modifier un array en accédent à l'index d'un élément. 
 
-```
+```js
 let array = [1,2,3];
 array[0] = 24;
 
@@ -236,7 +236,7 @@ console.log(array); // [24,2,3]
 
 La méthode `.length` permet d'indiquer la taille d'un array :
 
-```
+```js
 let arr = ["pomme", "cerise", "ananas"];
 console.log(arr.lenght); //3
 ```
@@ -253,7 +253,7 @@ Diverses méthodes existent pour modifier un array :
 
 - `unshift()` : ajoute un élément au début de l'array
 
-```
+```js
 let arr = ["pomme", "cerise", "ananas"];
 
 arr.push("kiwi"); // ["pomme", "cerise", "ananas", "kiwi"]
@@ -269,7 +269,7 @@ arr.unshift("abricot"); ["abricot", "pomme", "cerise", "ananas"]
 
 Lorsque l'on veut itérer sur un array, on peut utiliser une boucle ``for`` : 
 
-```
+```js
 let arr = [1,2,3,4];
 
 for (let i = 0, i < arr.length, i++) {
@@ -281,7 +281,7 @@ console.log(arr) ; //[3,6,9,12]
 
 Une autre façon d'écrire cette boucle est d'utiliser une boucle ``for..of`` :
 
-```
+```js
 let arr = [1,2,3,4];
 
 for (let element of arr) {
@@ -293,7 +293,7 @@ console.log(arr); //[3,6,9,12]
 
 Une méthode existe également afin d'itérer sur un array, il s'agit de la méthode `.map`: 
 
-```
+```js
 let arr = [1,2,3,4];
 
 let arr1 = arr.map(x => x*3);
@@ -315,7 +315,7 @@ Les fonctions sont des pièces de code réutilisable (un peu comme les mixins en
 
 L'écriture de base d'une fonction fait appel à 3 éléments : 
 
-```
+```js
 function nomDeLaFonction(argument(s)) {
   //bloc d'instruction
 }
@@ -323,7 +323,7 @@ function nomDeLaFonction(argument(s)) {
 
 Prenons l'exemple d'un calcul d'une somme qui doit être réalisé plusieurs fois dans un script. On peut faire une fonction ainsi, il n'y aura qu'à appeler la fonction au moment d'effectuer la somme :
 
-```
+```js
 function somme(a, b) {
   return a + b;
 }
@@ -335,7 +335,7 @@ somme(3,4); // 7
 
 Les fonctions fléchées sont une autre forme de syntaxe d'écriture de fonctions :
 
-```
+```js
 nomDeLaFonction = (argument(s)) => {
   //bloc d'instruction
 }
@@ -343,7 +343,7 @@ nomDeLaFonction = (argument(s)) => {
 
 Si on reprend notre fonction somme, la nouvelle syntaxe devient: 
 
-```
+```js
 somme = (a, b) => {
   return a + b;
 }
@@ -353,7 +353,7 @@ somme = (a, b) => {
 
 Le principe de la récursivité dans la programmation est le fait d'appeler la fonction elle-même dans l'instruction
 
-```
+```js
 function count(i) {
   if (i <= 100) {
     count(i + 1)
@@ -368,7 +368,7 @@ Lorsque l'on utilise des fonctions dans un script, il faut le nom de la fonction
 
 Si on reprend notre fonction somme : 
 
-```
+```js
 /*
 * @function somme()
 * Fonction permettant de faire la somme entre deux valeurs numériques
@@ -389,7 +389,7 @@ function somme(a, b) {
 
 Les objets sont des structures de programmation assez simple comme les arrays. Dans le cas des objets, l'accès ne se fait pas via les index mais via un système de clé:valeur. 
 
-```
+```js
 let objet = {
   prenom : "Loïc",
   nom : "Calcagno",
@@ -399,13 +399,13 @@ let objet = {
 
 Si je veux accéder à un élément de l'objet, il suffit d'appeler la clé pour avoir accès à la valeur. Si je veux voir l'âge, je fais : 
 
-```
+```js
 console.log(objet.age)
 ```
 
 On peut même imaginer combiner les objets et les arrays pour avoir accès à des structures plus complexes. 
 
-```
+```js
 let presentation = {
   prenom : "Loïc",
   nom : "Calcagno",
@@ -439,7 +439,7 @@ Notons également qu'un héritage peut avoir lieu entre différentes classes.
 
 Un constructeur est la fonctionne qui sera appelée lorsque l'objet est créé. 
 
-```
+```js
 class Presentation {
   constructor(prenom, nom) {
     this.prenom = prenom;
@@ -450,7 +450,7 @@ class Presentation {
 
 Lors de la création d'un objet à partir d'une classe, on appelle l'objet créé une *instance*. Ce procédé de création à partir d'une classe se nomme l'*instanciation*. 
 
-```
+```js
 let x = new Presentation("Loïc", "Calcagno");
 ```
 
@@ -462,7 +462,7 @@ Une classe possède diverses méthodes. Il s'agit juste d'une fonction mais dans
 
 Le mot-clé `this` est d'ailleurs une méthode qui permet d'accéder à l'objet en question.
 
-```
+```js
 class Presentation {
   constructor(prenom, nom) {
     this.prenom = prenom,
@@ -485,7 +485,7 @@ La syntaxe de la méthode get permet de lier une propriété d'un objet à une f
 
 Tout ça pour dire, que grâce à la méthode get, j'appelle un élément via la propriété sans le modifier. 
 
-```
+```js
 class Presentation {
   constructor(prenon) {
     this.prenom = prenom;
@@ -504,7 +504,7 @@ La syntaxe de la méthode set permet de lier une propriété d'un objet à une f
 
 Tout ça pour dire, que je peux venir modifier une propriété de ma classe via une valeur que j'attribue à ma méthode set. 
 
-```
+```js
 class Presentation {
   constructor(prenon) {
     this.prenom = prenom;
@@ -526,7 +526,7 @@ L'opérateur `.` permet d'accéder à n'importe quel attribut d'un objet.
 
 Une classe permet de faire un *faux attribut* permettant de déclencher une fonction.
 
-```
+```js
 class Presentation {
   constructor(prenom) {
     this.prenom = prenom;
@@ -552,7 +552,7 @@ console.log(x.changementPrenom); // Marc
 
 Lorsque l'on utilise des classes, il est possible de réutiliser des méthodes définies dans d'autres classes. C'est ce que l'on appelle l'héritage des classes. 
 
-```
+```js
 class Presentation {
   constructor(prenom) {
     this.prenom = prenom;

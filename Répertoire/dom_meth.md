@@ -2,7 +2,7 @@
 
 Voici les différentes méthodes pour manipuler le DOM. On peut retrouver les méthodes pour l'interface `document.`, `node.` et `element.`
 
-Dans cette section, seule les méthodes seront définies. Pour plus d'exemples, rendez-vous sur [ce lien](https://developer.mozilla.org/fr/docs/Web/API/Document)
+Dans cette section, seule les méthodes seront définies. Pour plus d'exemples, rendez-vous sur ces liens pour [l'interface document](https://developer.mozilla.org/fr/docs/Web/API/Document), [l'interface node](https://developer.mozilla.org/fr/docs/Web/API/Node) et [l'interface element](https://developer.mozilla.org/fr/docs/Web/API/Element).
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
 

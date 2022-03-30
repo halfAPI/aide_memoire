@@ -14,7 +14,7 @@ Une cheatsheet HTML est disponible [ICI](https://www.frontendcheatsheets.com/htm
 
 Voici le code minimal pour une page html :
 
-```
+```html
 <!DOCTYPE html> //Initie une page HTML5
 <html>
     <head>

@@ -8,8 +8,8 @@ Ecrire en SASS ou SCSS c'est comme écrire du CSS mais en étant optimal. En eff
 
 Il s'agit tout simplement de la présence ou non de parenthèses 
 
-```
-//SCSS
+```css
+/*SCSS*/
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
@@ -18,7 +18,7 @@ body {
   color: $primary-color;
 }
 
-//SASS
+/*SASS*/
 $font-stack: Helvetica, sans-serif
 $primary-color: #333
 
@@ -33,7 +33,7 @@ _Dans les exemples qui vont suivre, la transformation du SCSS en CSS sera toujou
 
 Il s'agit d'un principe de stockage d'instruction au sein d'une variable. Son utilité est que si un petit bloc d'instruction est répété dans plusieurs balises HTML, on stocke ce bloc dans une variable. Il ne restera plus qu'à faire un appel de cette variable dans les balises adéquates. 
 
-```
+```css
 $font-stack: Helvetica, sans-serif
 $primary-color: #333
 
@@ -45,7 +45,7 @@ body{
 
 **Le CSS correspondant :**
 
-```
+```css
 body {
   font: 100% Helvetica, sans-serif;
   color: #333;
@@ -56,7 +56,7 @@ body {
 
 L'écriture en SASS permet d'ajouter des opérateurs mathématiques à notre code. Il s'agit des opérations de base : `+`, `-`, `*`, `math.div()` et `%`.
 
-```
+```css
 article[role="main"] {
   width: math.div(600px, 960px) * 100%;
 }
@@ -69,7 +69,7 @@ aside[role="complementary"] {
 
 **Le CSS correspondant :**
 
-```
+```css
 article[role="main"] {
   width: 62.5%;
 }
@@ -88,7 +88,7 @@ SASS permet de contrer ce problème en permettant d'imbriquer les éléments sui
 
 Il faut néanmoins préciser que des éléments trop imbriqués peuvent conduire à un CSS surqualifié, ce qui est considéré comme une mauvaise pratique. 
 
-```
+```css
 nav {
   ul {
     margin: 0;
@@ -108,7 +108,7 @@ nav {
 
 **Le CSS correspondant :**
 
-```
+```css
 nav ul {
   margin: 0;
   padding: 0;
@@ -128,7 +128,7 @@ nav a {
 
 L'utilisation de classes étendues permet de partager un ensemble de propriétés CSS d'un sélecteur à un autre.
 
-```
+```css
 /* This CSS will print because %message-shared is extended. */
 %message-shared {
   border: 1px solid #ccc;
@@ -136,7 +136,7 @@ L'utilisation de classes étendues permet de partager un ensemble de propriété
   color: #333;
 }
 
-// This CSS won't print because %equal-heights is never extended.
+/*This CSS won't print because %equal-heights is never extended.*/
 %equal-heights {
   display: flex;
   flex-wrap: wrap;
@@ -164,7 +164,7 @@ L'utilisation de classes étendues permet de partager un ensemble de propriété
 
 **Le CSS correspondant :**
 
-```
+```css
 /* This CSS will print because %message-shared is extended. */
 .message, .success, .error, .warning {
   border: 1px solid #ccc;
@@ -189,8 +189,8 @@ L'utilisation de classes étendues permet de partager un ensemble de propriété
 
 Il n'y a pas d'obligation d'utiliser un seul et même fichier SASS, on peut le diviser. Admettons que dans un fichier, on possède une variable qui nous intéresse dans un autre projet. Alors, on pourrait utiliser un module qui charge le code présent à l'endroit définit afin de charger ladite variable. 
 
-```
-// Fichier 1 : _base.scss
+```css
+/*Fichier 1 : _base.scss*/
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
@@ -200,7 +200,7 @@ body {
 }
 ////////////////////////////////////////
 
-// Fichier 2 : styles.scss
+/*Fichier 2 : styles.scss*/
 @use 'base';
 
 .inverse {
@@ -211,7 +211,7 @@ body {
 
 **Le CSS correspondant :**
 
-```
+```css
 body {
   font: 100% Helvetica, sans-serif;
   color: #333;
@@ -227,7 +227,7 @@ body {
 
 A partir du moment où on répète plus de 2 fois un bloc d'instruction, le risque d'erreur augmente lui aussi. C'est pourquoi, il est intéressant de passer par une structure de stockage des instructions, que l'on appelle mixine, et faire un appel à chaque que l'on a besoin de ces instructions. C'est un peu le principe des fonctions en algorithmie. 
 
-```
+```css
 @mixin theme($theme: DarkGray) {
   background: $theme;
   box-shadow: 0 0 1px rgba($theme, .25);
@@ -247,7 +247,7 @@ A partir du moment où on répète plus de 2 fois un bloc d'instruction, le risq
 
 **Le CSS correspondant :**
 
-```
+```css
 .info {
   background: DarkGray;
   box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);

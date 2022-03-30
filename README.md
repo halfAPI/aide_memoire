@@ -17,44 +17,44 @@ Aide mémoire pour les commandes utilisées dans la formation BeCode-Développeu
 
 # La prairie
 
-* [Le terminal](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/terminal.md)
+1. [Le terminal](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/terminal.md)
 
-* [Le markdown](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/markdown.md)
+2. [Le markdown](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/markdown.md)
 
-* [GIT](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/git.md)
+3. [GIT](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/git.md)
 
-* [HTML](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/html.md)
+4. [HTML](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/html.md)
 
-* [Les attributs ARIA](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/aria.md)
+5. [Les attributs ARIA](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/aria.md)
 
-* [CSS + les propriétés pour la flexbox et grid](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/css.md)
+6. [CSS + les propriétés pour la flexbox et grid](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/css.md)
 
-* [Les générateurs de code CSS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/css_outils.md)
+7. [Les générateurs de code CSS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/css_outils.md)
 
-* [Le responsive web](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/responsive.md)
+8. [Le responsive web](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/responsive.md)
 
-* [SASS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sass.md)
+9. [SASS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sass.md)
 
-* [Les framework CSS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/framework.md)
+10. [Les framework CSS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/framework.md)
 
 # La colline 
 
-* [L'algorithmie](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/algorithmie.md)
+1. [L'algorithmie](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/algorithmie.md)
 
-* [Programmation en Javascript : 16 chapitres pour avoir les bases du JS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/js.md)
+2. [Programmation en Javascript : 16 chapitres pour avoir les bases du JS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/js.md)
 
-* [Les méthodes pour l'objet global `Array`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/array_meth.md)
+3. [Les méthodes pour l'objet global `Array`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/array_meth.md)
 
-* [Les méthodes pour l'objet global `String`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/string_meth.md)
+4. [Les méthodes pour l'objet global `String`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/string_meth.md)
 
-* [Les méthodes pour l'objet global `Date`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/date_meth.md)
+5. [Les méthodes pour l'objet global `Date`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/date_meth.md)
 
-* [Les méthodes pour l'objet global `Number`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/nombre_meth.md)
+6. [Les méthodes pour l'objet global `Number`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/nombre_meth.md)
 
-* [Les méthodes pour l'objet global `Math`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/math_meth.md)
+7. [Les méthodes pour l'objet global `Math`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/math_meth.md)
 
-* [Les méthodes pour l'objet global `Set`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/set_meth.md)
+8. [Les méthodes pour l'objet global `Set`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/set_meth.md)
 
-* [Les méthodes pour l'objet global `Object`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/object_meth.md)
+9. [Les méthodes pour l'objet global `Object`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/object_meth.md)
 
-* [Les méthodes pour la manipulation du DOM](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/dom_meth.md)
+10. [Les méthodes pour la manipulation du DOM](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/dom_meth.md)

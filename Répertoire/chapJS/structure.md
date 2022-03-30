@@ -33,8 +33,10 @@ Dans les boucles de contrôle, on va réaliser des conditions où tel ou tel blo
 | `>=`       | Permet de tester si une valeur est supérieure ou égale à une autre|
 
 *Petit exercice utile à faire. Initialiser 9 variables pour tester les différents opérateurs et renvoyer le booléen correspondant à l'opération.*
+
 Exemple : 
-```
+
+```js
 let x = 4
 
 let test1 = x == 4;
@@ -47,7 +49,7 @@ alert(test1) //true
 
 C'est l'une des conditions les plus utilisées car c'est la plus simple et exécute un bloc de code SSI le résultat d'un test vaut `true`.
 
-```
+```js
 let x = 9;
 let y = 7; 
 
@@ -60,7 +62,7 @@ if (x > y) {
 
 Dans l'exemple ci-dessus, la valeur logique de la boucle if est `true`. On peut changer le comportement de la boucle en demander d'exécuter le bloc de code si l'instruction renvoie `false`. 
 
-```
+```js
 let x = 4;
 let y = 0;
 
@@ -73,7 +75,7 @@ if ((x == y) == false) {
 
 La boucle `if` est assez restrictive dans le sens où elle ne teste qu'une seule et unique condition! Si on veut tester une condition supplémentaire, on passe par une boucle `if...else`.
 
-```
+```js
 let x = 5;
 
 if(x > 2) {
@@ -87,7 +89,7 @@ if(x > 2) {
 
 Il s'agit d'une autre variante de la boucle `if` qui est encore plus complète. Elle permet de tester d'autres conditions intermédiaires. 
 
-```
+```js
 let x = 0.5;
 
 if(x > 1){
@@ -154,7 +156,7 @@ La syntaxe est très condensée et permet d'écrire l'instruction en une seule l
 
 Cet opérateur est mal aimé car la syntaxe est un peu compliqué de prime abord mais si le code est correctement indenté et commenté, il n'y a aucun soucis dans l'utilisation de cet opérateur. 
 
-```
+```js
 x >=10 ? 'x est supérieur à 10' : 'x est strictement inférieur à 10";
 ```
 
@@ -164,7 +166,7 @@ Cette instruction permet d'exécuter un code en fonction de la valeur d'une vari
 
 Cependant, ces deux types d’instructions ne sont pas strictement équivalentes puisque dans un `switch` chaque cas va être lié à une valeur précise. En effet, l’instruction `switch` ne supporte pas l’utilisation des opérateurs de supériorité ou d’infériorité. 
 
-```
+```js
 let x = 15;
 
 switch(x){
@@ -220,7 +222,7 @@ Dans ce genre de boucle, il faut faire comprendre que l'on veut ajouter une vale
 
 La boucle `while` va nous permettre de répéter une série d’instructions tant qu’une condition donnée est vraie c’est-à-dire tant que la condition de sortie n’est pas vérifiée.
 
-```
+```js
 //On initialise une variable let x
 let x = 0
 
@@ -234,7 +236,7 @@ while(x < 10){
 
 Lorsqu’on utilise une boucle `do… while`, le code de la boucle va être exécuté avant l’évaluation de la condition de sortie. 
 
-```
+```js
 let a = 0;
 
 do{
@@ -247,7 +249,7 @@ while(a < 10);
 
 Une boucle for contient trois « phases » à l’intérieur du couple de parenthèses : une phase d’initialisation, une phase de test (condition de sortie) et une phase d’itération (généralement une incrémentation). Chaque phase est séparée des autres par un point-virgule. 
 
-```
+```js
 for(let i = 0; i < 10; i++){
     return i;
 }
@@ -259,7 +261,7 @@ Pour sauter une itération de boucle et passer directement à la suivante, on pe
 
 Cette instruction peut s’avérer très utile pour optimiser les performances d’une boucle et économiser les ressources lorsqu’on utilise une boucle pour rechercher spécifiquement certaines valeurs qui répondent à des critères précis.
 
-```
+```js
 for(let i = 0; i < 10; i++){
     //Si i / 2 possède un reste, alors i est impair
     if(i % 2 != 0){
@@ -277,7 +279,7 @@ On va également pouvoir complètement stopper l’exécution d’une boucle et 
 
 Utiliser cette instruction peut à nouveau s’avérer très intéressant pour optimiser les performances de notre script lorsqu’on utilise une boucle pour chercher une valeur en particulier en itérant parmi un grand nombre de valeurs.
 
-```
+```js
 for(let i = 0; i < 1000; i++){
     //On sort de la boucle dès que la valeur de i atteint 13
     if(i == 13){
