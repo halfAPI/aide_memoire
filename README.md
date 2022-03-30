@@ -41,13 +41,7 @@ Aide mémoire pour les commandes utilisées dans la formation BeCode-Développeu
 
 * [L'algorithmie](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/algorithmie.md)
 
-* [Coder en Javascript : 16 chapitres pour avoir les bases du JS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/js.md)
-
-* [Ajax](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/json_ajax_fetch.md)
-
-* [Canvas](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/canvas.md)
-
-* [Jasmine](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/jasmine.md)
+* [Programmation en Javascript : 16 chapitres pour avoir les bases du JS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/js.md)
 
 * [Les méthodes pour l'objet global `Array`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/array_meth.md)
 
@@ -63,4 +57,4 @@ Aide mémoire pour les commandes utilisées dans la formation BeCode-Développeu
 
 * [Les méthodes pour l'objet global `Object`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/object_meth.md)
 
-* [Les méthodes pour la manipulation du DOM](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/object_meth.md)
+* [Les méthodes pour la manipulation du DOM](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/dom_meth.md)

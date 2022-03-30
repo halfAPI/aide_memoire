@@ -36,4 +36,6 @@ Les différentes sections abordées sont :
 
 * [JSON, AJAX et FETCH](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/json_ajax_fetch.md) 
 
+* [Les tests unitaires](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/unittests.md)
+
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
