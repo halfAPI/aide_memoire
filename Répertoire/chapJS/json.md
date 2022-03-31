@@ -23,13 +23,6 @@ Il existe 2 méthodes en JSON :
 - La méthode `stringify()` : Convertir une valeur JS en chaine JSON. 
 
 ```js
-     HTML JS 
-
-    Result
-    Skip Results Iframe
-
-EDIT ON
-
 //Objet JavaScript
 let utilisateur = {
     "prenom": "Loic",
