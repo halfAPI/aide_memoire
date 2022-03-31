@@ -1,4 +1,4 @@
-# JSON, AJAX et FETCH en JS
+# JSON
 
 Voici les points abordés dans cette section : 
 
