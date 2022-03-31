@@ -6,6 +6,8 @@ Dans cette section, seule les méthodes seront définies. Pour plus d'exemples, 
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
 
+[Retour vers le chapitre 'Les valeurs primitives et les objets globaux en JS'](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/primitives.md)
+
 - `Array.concat()` : La méthode concat() est utilisée afin de fusionner deux ou plusieurs tableaux en les concaténant. Cette méthode ne modifie pas les tableaux existants, elle renvoie un nouveau tableau qui est le résultat de l'opération.
 
 ```js
@@ -380,5 +382,7 @@ arr.unshift([élém1[, ...[, élémN]]])
 var a = ['t', 'i', 't', 'o', 'u'];
 var iterateur = a.values();
 ```
+
+[Retour vers le chapitre 'Les valeurs primitives et les objets globaux en JS'](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/primitives.md)
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)

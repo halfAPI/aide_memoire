@@ -6,6 +6,8 @@ Dans cette section, seule les méthodes seront définies. Pour plus d'exemples, 
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
 
+[Retour vers le chapitre 'Les valeurs primitives et les objets globaux en JS'](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/primitives.md)
+
 - `String.chartAt()` : La méthode charAt() renvoie une nouvelle chaîne contenant le caractère (ou, plus précisément, le point de code UTF-16) à la position indiquée en argument.
 
 ```js
@@ -379,5 +381,7 @@ console.log(greeting.trimStart());
 ```js
 str.valueOf()
 ```
+
+[Retour vers le chapitre 'Les valeurs primitives et les objets globaux en JS'](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/primitives.md)
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)

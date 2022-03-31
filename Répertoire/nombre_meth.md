@@ -6,6 +6,8 @@ Dans cette section, seule les méthodes seront définies. Pour plus d'exemples, 
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
 
+[Retour vers le chapitre 'Les valeurs primitives et les objets globaux en JS'](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/primitives.md)
+
 - `Number.isFinite()` : La méthode Number.isFinite() permet de déterminer si la valeur fournie est un nombre fini.
 ```js
 Number.isFinite(valeurÀTester);
@@ -168,6 +170,8 @@ const num = numObj.valueOf();
 console.log(num);
 // expected output: 42
 ```
+
+[Retour vers le chapitre 'Les valeurs primitives et les objets globaux en JS'](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/primitives.md)
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
 

@@ -50,7 +50,7 @@ disBonjour("loic")
 
 De plus, dans la structure `head` du html, il faudra préciser qu'on importe un module : 
 
-```js
+```html
 <script type="module" src="cours.js" async></script>
 ```
 

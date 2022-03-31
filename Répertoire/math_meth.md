@@ -6,6 +6,8 @@ Dans cette section, seule les méthodes seront définies. Pour plus d'exemples, 
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
 
+[Retour vers le chapitre 'Les valeurs primitives et les objets globaux en JS'](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/primitives.md)
+
 - `Math.abs()` : La fonction Math.abs() retourne la valeur absolue d'un nombre, c'est-à-dire :
 
 Math.abs ( x ) = | x | =  x si x ≥ 0  ET  - x si x < 0
@@ -111,5 +113,7 @@ tanh x = $\frac{sin x}{cos x}$
 - `Math.trunc()` : La fonction Math.trunc() retourne la troncature entière d'un nombre en retirant sa partie décimale.
 
 Math.trunc ( x ) = |x| si x ≥ 0  ET |x| si x < 0 
+
+[Retour vers le chapitre 'Les valeurs primitives et les objets globaux en JS'](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/primitives.md)
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)

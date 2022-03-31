@@ -6,6 +6,8 @@ Dans cette section, seule les méthodes seront définies. Pour plus d'exemples, 
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
 
+[Retour vers le chapitre 'Les valeurs primitives et les objets globaux en JS'](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/primitives.md)
+
 - `Date.getDate()` : La méthode getDate() retourne le jour du mois pour la date spécifiée d'après l'heure locale.
 
 - `Date.getDay()` : La méthode getDay() renvoie le jour de la semaine pour la date spécifiée selon l'heure locale (0 correspondant à dimanche).
@@ -103,5 +105,7 @@ Dans cette section, seule les méthodes seront définies. Pour plus d'exemples, 
 - `Date.UTC()` : La méthode Date.UTC() accepte des paramètres similaires à ceux du constructeur Date et renvoie le nombre de millièmes de seconde depuis le 1er janvier 1970, 00:00:00, temps universel. Autrement dit, elle renvoie la date en UTC.
 
 - `Date.valueOf()` : La méthode valueOf() renvoie la valeur primitive d'un objet Date.
+
+[Retour vers le chapitre 'Les valeurs primitives et les objets globaux en JS'](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/primitives.md)
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
