@@ -34,7 +34,7 @@ Les différentes sections abordées sont :
 
 * [Les modules](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/module.md) 
 
-* [JSON](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/json_ajax_fetch.md) 
+* [JSON](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/json.md) 
 
 * [Les tests unitaires](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapJS/unittests.md)
 
