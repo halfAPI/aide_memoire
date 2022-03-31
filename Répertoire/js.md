@@ -2,6 +2,8 @@
 
 Ce chapitre concernant Javascript est long et est donc divisé en différentes sections pour permettre une meilleure lecture. 
 
+Une cheatsheet sur git est disponible [ICI](https://github.com/CalcagnoLoic/aide_memoire/blob/main/Fichiers%20utiles/js.pdf)
+
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
 
 Les différentes sections abordées sont : 
