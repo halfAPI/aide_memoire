@@ -12,7 +12,7 @@ Voici les points abordés dans cette section :
 
 * Création de sous masques et d'assertions
 
-* Marqueurs des regexp
+* Les options des regexp
 
 [Retour vers les chapitres JS](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/js.md)
 
