@@ -59,3 +59,9 @@ Aide mémoire pour les commandes utilisées dans la formation BeCode-Développeu
 9. [Les méthodes pour l'objet global `Object`](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/object_meth.md)
 
 10. [Les méthodes pour la manipulation du DOM](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/dom_meth.md)
+
+# La montagne 
+
+1. [jQuery](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/jquery.md)
+
+2. [PHP et SQL](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/phpsql.md)
