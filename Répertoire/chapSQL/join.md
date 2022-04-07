@@ -10,7 +10,7 @@ Voici les points abordées dans cette section :
 
 * Les opérateurs de sous requête
 
-[Retour vers les chapitres PHP](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/php.md)
+[Retour vers les chapitres PHP](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sql.md)
 
 # Présentation des jointures
 
@@ -20,4 +20,4 @@ Voici les points abordées dans cette section :
 
 # Les opérateurs de sous requête
 
-[Retour vers les chapitres PHP](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/php.md)
+[Retour vers les chapitres PHP](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sql.md)

@@ -16,7 +16,7 @@ Voici les points abordées dans cette section :
 
 * Utiliser les fonctions d'agrégation et les fonctions scalaires SQL
 
-[Retour vers les chapitres PHP](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/php.md)
+[Retour vers les chapitres PHP](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sql.md)
 
 # Insérer des données dans une table MySQL
 
@@ -32,4 +32,4 @@ Voici les points abordées dans cette section :
 
 # Utiliser les fonctions d'agrégation et les fonctions scalaires SQL
 
-[Retour vers les chapitres PHP](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/php.md)
+[Retour vers les chapitres PHP](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sql.md)
