@@ -14,6 +14,6 @@ Les différentes sections abordées sont :
 
 * [Création d'effets et d'animations avec jQuery](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapjquery/anim.md)
 
-* [jQuery ajax](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapjquery/ajax.md)
+* [jQuery et ajax](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapjquery/ajax.md)
 
 [Retour vers le README](https://github.com/CalcagnoLoic/aide_memoire/blob/main/README.md)
