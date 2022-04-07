@@ -10,7 +10,7 @@ Voici les points abordées dans cette section :
 
 * Créer une base de données MySQL et une table dans la base
 
-[Retour vers les chapitres PHP](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sql.md)
+[Retour vers les chapitres SQL](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sql.md)
 
 # Introduction aux bases de données et à SQL
 
@@ -20,4 +20,4 @@ Voici les points abordées dans cette section :
 
 # Créer une base de données MySQL et une table dans la base
 
-[Retour vers les chapitres PHP](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sql.md)
+[Retour vers les chapitres SQL](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sql.md)

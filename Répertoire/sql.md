@@ -2,17 +2,17 @@
 
 Ce chapitre concernant MySQL est long et est donc divisé en différentes sections pour permettre une meilleure lecture. 
 
-[Retour vers la section PHP/SQL](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sql.md)
+[Retour vers la section PHP/SQL](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/phpsql.md)
 
 Les différentes sections abordées sont : 
 
-* [Introduction aux bases données, au SQL et à MySQL](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapPHP/intro.md)
+* [Introduction aux bases données, au SQL et à MySQL](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapSQL/intro.md)
 
-* [Manipuler des données dans des bases MySQL avec PDO](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapPHP/manip.md)
+* [Manipuler des données dans des bases MySQL avec PDO](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapSQL/manip.md)
 
-* [Jointure, union et sous requêtes](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapPHP/join.md)
+* [Jointure, union et sous requêtes](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapSQL/join.md)
 
-* [Gestion des formulaires HTML](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapPHP/form.md)
+* [Gestion des formulaires HTML](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/chapSQL/form.md)
 
-[Retour vers la section PHP/SQL](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/sql.md)
+[Retour vers la section PHP/SQL](https://github.com/CalcagnoLoic/aide_memoire/blob/main/R%C3%A9pertoire/phpsql.md)
 
